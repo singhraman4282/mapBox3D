@@ -1,0 +1,11 @@
+framework module MapboxSceneKit {
+  umbrella header "MapboxSceneKit.h"
+
+  export *
+  module * { export * }
+}
+
+module MapboxSceneKit.Swift {
+    header "MapboxSceneKit-Swift.h"
+    requires objc
+}
