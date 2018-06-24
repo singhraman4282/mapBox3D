@@ -32,6 +32,11 @@
 	<string>AR VIewing</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>do it man</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

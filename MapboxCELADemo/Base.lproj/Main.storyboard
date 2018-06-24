@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3dL-vJ-rLK">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,87 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="yfb-ED-pxg">
+            <objects>
+                <viewController id="3dL-vJ-rLK" customClass="WelcomeViewController" customModule="MapboxCELADemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e6z-qq-ATW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="s0M-wb-Thg">
+                                <rect key="frame" x="0.0" y="184.5" width="375" height="482.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="5mQ-7o-YBq" customClass="TableViewCell" customModule="MapboxCELADemo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5mQ-7o-YBq" id="qnY-ox-1y6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehf-8g-JJF">
+                                                    <rect key="frame" x="20" y="10" width="335" height="24"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="0.89411764709999997" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ehf-8g-JJF" firstAttribute="leading" secondItem="qnY-ox-1y6" secondAttribute="leading" constant="20" id="2nB-xk-mL6"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ehf-8g-JJF" secondAttribute="bottom" constant="9.5" id="Q5p-kt-oA8"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ehf-8g-JJF" secondAttribute="trailing" constant="20" id="jeR-Z8-P00"/>
+                                                <constraint firstItem="Ehf-8g-JJF" firstAttribute="top" secondItem="qnY-ox-1y6" secondAttribute="top" constant="10" id="zGD-xQ-4kw"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cityLabel" destination="Ehf-8g-JJF" id="prm-6j-pG9"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="3dL-vJ-rLK" id="aSU-g4-6IM"/>
+                                    <outlet property="delegate" destination="3dL-vJ-rLK" id="wi3-kO-Su9"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="batmanLogo" translatesAutoresizingMaskIntoConstraints="NO" id="gVh-IW-Hll">
+                                <rect key="frame" x="111" y="40" width="153" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="9NH-lc-gEa"/>
+                                    <constraint firstAttribute="width" constant="153" id="GQ5-Ji-7rX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the city you want to brood over" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zwq-vN-Nqa">
+                                <rect key="frame" x="0.0" y="141" width="375" height="23.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.89411764705882357" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s0M-wb-Thg" firstAttribute="trailing" secondItem="0VF-Jc-E9r" secondAttribute="trailing" id="6Wr-Xb-vxB"/>
+                            <constraint firstItem="s0M-wb-Thg" firstAttribute="leading" secondItem="0VF-Jc-E9r" secondAttribute="leading" id="9OL-Ps-Uc6"/>
+                            <constraint firstItem="s0M-wb-Thg" firstAttribute="bottom" secondItem="0VF-Jc-E9r" secondAttribute="bottom" id="S6J-mq-Aku"/>
+                            <constraint firstItem="zwq-vN-Nqa" firstAttribute="leading" secondItem="0VF-Jc-E9r" secondAttribute="leading" id="SCq-Pd-S9K"/>
+                            <constraint firstItem="zwq-vN-Nqa" firstAttribute="top" secondItem="gVh-IW-Hll" secondAttribute="bottom" constant="20" id="mhO-1a-w6d"/>
+                            <constraint firstItem="gVh-IW-Hll" firstAttribute="top" secondItem="0VF-Jc-E9r" secondAttribute="top" constant="20" id="ngQ-zI-fLI"/>
+                            <constraint firstItem="gVh-IW-Hll" firstAttribute="centerX" secondItem="e6z-qq-ATW" secondAttribute="centerX" id="q37-wz-KOJ"/>
+                            <constraint firstItem="s0M-wb-Thg" firstAttribute="top" secondItem="zwq-vN-Nqa" secondAttribute="bottom" constant="20" id="q8k-H2-5K3"/>
+                            <constraint firstItem="0VF-Jc-E9r" firstAttribute="trailing" secondItem="zwq-vN-Nqa" secondAttribute="trailing" id="uVd-5a-BGS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0VF-Jc-E9r"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="s0M-wb-Thg" id="3YL-bD-Cjs"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="brood" id="obD-9m-5p4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Dr-Ql-0Sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-202.40000000000001" y="73.313343328335833"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -123,13 +204,24 @@
                                     <action selector="printPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mz1-SR-fDq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3w-Oy-ONP">
+                                <rect key="frame" x="20" y="40" width="34" height="30"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IWJ-9h-ASl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Exp-MT-wO2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1OZ-6d-Esf"/>
+                            <constraint firstItem="A3w-Oy-ONP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="3sF-Di-Qgu"/>
                             <constraint firstItem="gTD-kZ-Mf5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AxN-0C-3ay"/>
                             <constraint firstItem="tHz-P5-Mtj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="DeA-5e-hM0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VN6-Kx-Qvs" secondAttribute="trailing" constant="45" id="IxH-aV-M6P"/>
+                            <constraint firstItem="A3w-Oy-ONP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QXh-S5-qRl"/>
                             <constraint firstItem="Rpj-9t-yMU" firstAttribute="top" secondItem="VN6-Kx-Qvs" secondAttribute="bottom" constant="15" id="QrZ-uk-Ywl"/>
                             <constraint firstItem="Bex-LT-u3l" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SW9-GE-dVc"/>
                             <constraint firstItem="gTD-kZ-Mf5" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VIn-oc-vXV"/>
@@ -161,11 +253,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140" y="133.5832083958021"/>
+            <point key="canvasLocation" x="538" y="75"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="qXl-Pe-9KY">
+            <objects>
+                <viewController id="cWf-6c-gJe" customClass="APITestViewController" customModule="MapboxCELADemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kve-1C-Ojc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="oJB-w6-iru"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k8s-Xz-QEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="76"/>
         </scene>
     </scenes>
     <resources>
         <image name="Move iPhone" width="74" height="120"/>
         <image name="Place" width="48" height="48"/>
+        <image name="batmanLogo" width="3624" height="1692"/>
     </resources>
 </document>

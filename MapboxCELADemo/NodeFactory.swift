@@ -15,8 +15,8 @@ import ARKit
 class NodeFactory: NSObject {
     
     private let locationManager = CLLocationManager()
-    private let RamansConstantForLat = 70402.2231289
-    private let RamansConstantForLon = 72828.9200356
+    private let RamansConstantForLat = 111034.840457//70402.2231289
+    private let RamansConstantForLon = 72748.1081083//72828.9200356
     
     func createBusNode(lattitude:Double, longitude:Double, name:String) -> SCNNode {
         
@@ -25,7 +25,8 @@ class NodeFactory: NSObject {
         
         let busNode = SCNNode(geometry: SCNBox(width: 10, height: 10, length: 30, chamferRadius: 0))
         busNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-        busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,380.004517,-(latBegin - (lattitude))*RamansConstantForLat)
+        busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,380.004517,(8462.36328 + ((latBegin - lattitude)*RamansConstantForLat)))
+        print(latBegin-lattitude)
         busNode.name = name
         
         return busNode
@@ -43,10 +44,17 @@ class NodeFactory: NSObject {
     }
    
     
-    func createTerrainNode() -> TerrainNode {
+    func createTerrainNode(lattitude:Double, longitude:Double) -> TerrainNode {
         
-        let latToBePlaced = self.locationManager.location?.coordinate.latitude
-        let lonToBePlaced = self.locationManager.location?.coordinate.longitude
+        var latToBePlaced = self.locationManager.location?.coordinate.latitude
+        var lonToBePlaced = self.locationManager.location?.coordinate.longitude
+        
+        if lattitude != 0.0 {
+            latToBePlaced = lattitude
+            lonToBePlaced = longitude
+        }
+        
+        
         
         let terrainNode = TerrainNode(minLat: latToBePlaced! - (0.07621358526/2), maxLat: latToBePlaced! + (0.07621358526/2),
                                      minLon: lonToBePlaced! - (0.12192598544/2), maxLon: lonToBePlaced! + (0.12192598544/2))

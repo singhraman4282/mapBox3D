@@ -21,9 +21,12 @@
 		F17E9B7620DC8CAA006C6BF0 /* MapboxSceneKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F17E9B7420DC8CAA006C6BF0 /* MapboxSceneKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F17E9B7820DC8F17006C6BF0 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */; };
 		F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */; };
+		F18CC49A20E001AD0055C470 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49920E001AD0055C470 /* WelcomeViewController.swift */; };
+		F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49B20E00C190055C470 /* TableViewCell.swift */; };
 		F1E86D0520DEDBDB003D5515 /* NodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0420DEDBDB003D5515 /* NodeFactory.swift */; };
 		F1E86D0920DF135A003D5515 /* ViewController+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0820DF135A003D5515 /* ViewController+ARSCNView.swift */; };
 		F1E86D0F20DF194E003D5515 /* ViewController+gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0E20DF194E003D5515 /* ViewController+gestures.swift */; };
+		F1E86D1120DF20DD003D5515 /* APITestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D1020DF20DD003D5515 /* APITestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,9 +61,12 @@
 		F17E9B7420DC8CAA006C6BF0 /* MapboxSceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxSceneKit.framework; sourceTree = "<group>"; };
 		F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 		F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNExtensions.swift; sourceTree = "<group>"; };
+		F18CC49920E001AD0055C470 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		F18CC49B20E00C190055C470 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F1E86D0420DEDBDB003D5515 /* NodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeFactory.swift; sourceTree = "<group>"; };
 		F1E86D0820DF135A003D5515 /* ViewController+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNView.swift"; sourceTree = "<group>"; };
 		F1E86D0E20DF194E003D5515 /* ViewController+gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+gestures.swift"; sourceTree = "<group>"; };
+		F1E86D1020DF20DD003D5515 /* APITestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,9 @@
 				F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */,
 				F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */,
 				F17E9B5F20DC8BAF006C6BF0 /* Main.storyboard */,
+				F18CC49B20E00C190055C470 /* TableViewCell.swift */,
+				F18CC49920E001AD0055C470 /* WelcomeViewController.swift */,
+				F1E86D1020DF20DD003D5515 /* APITestViewController.swift */,
 				F17E9B6220DC8BB2006C6BF0 /* Assets.xcassets */,
 				F17E9B6420DC8BB2006C6BF0 /* LaunchScreen.storyboard */,
 				F17E9B6720DC8BB2006C6BF0 /* Info.plist */,
@@ -249,13 +258,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F18CC49A20E001AD0055C470 /* WelcomeViewController.swift in Sources */,
 				F1E86D0520DEDBDB003D5515 /* NodeFactory.swift in Sources */,
 				F17E9B5E20DC8BAF006C6BF0 /* ViewController.swift in Sources */,
 				F17E9B7820DC8F17006C6BF0 /* FocusSquare.swift in Sources */,
 				F1E86D0920DF135A003D5515 /* ViewController+ARSCNView.swift in Sources */,
+				F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */,
 				F1E86D0F20DF194E003D5515 /* ViewController+gestures.swift in Sources */,
 				F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */,
 				F17E9B5C20DC8BAF006C6BF0 /* AppDelegate.swift in Sources */,
+				F1E86D1120DF20DD003D5515 /* APITestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

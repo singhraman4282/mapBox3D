@@ -38,10 +38,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var focusSquare: FocusSquare?
     var lastDragResult: ARHitTestResult?
     var startScale: Float?
-    
+    var cityLattitude = 0.0
+    var cityLongitude = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(cityLattitude)
+        print(cityLongitude)
         enableBasicLocationServices()
         locationManager.delegate = self
         
@@ -87,6 +90,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.requestWhenInUseAuthorization()
             break
         case .authorizedWhenInUse, .authorizedAlways:
+            print((self.locationManager.location?.coordinate.latitude)!)
+            print((self.locationManager.location?.coordinate.longitude)!)
             break
         }
     }
@@ -112,7 +117,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     private func insert(on plane: SCNNode, from hitResult: ARHitTestResult) {
        
-        let terrainNode = nodeFactory.createTerrainNode()
+        let terrainNode = nodeFactory.createTerrainNode(lattitude: cityLattitude, longitude: cityLongitude)
         
         let scale = Float(0.333 * hitResult.distance) / terrainNode.boundingSphere.radius
         terrainNode.transform = SCNMatrix4MakeScale(scale, scale, scale)
@@ -131,17 +136,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             terrainNode.geometry?.materials[4].diffuse.contents = image
         })
         
+        if cityLattitude == 0.0 {
+            let endSphere = nodeFactory.createMyPositionNode()
+            terrainNode.addChildNode(endSphere)
+        }
         
-        let endSphere = nodeFactory.createMyPositionNode()
-        terrainNode.addChildNode(endSphere)
-        
-        let redNode = nodeFactory.createBusNode(lattitude: 49.119270, longitude: -122.890327, name: "thisNode")
-        terrainNode.addChildNode(redNode)
 
-        let blueNode = nodeFactory.createBusNode(lattitude: 49.119138, longitude: -122.867829, name: "thisNode")
-        terrainNode.addChildNode(blueNode)
-        
-        
+        let redNode0 = nodeFactory.createBusNode(lattitude: 49.129189, longitude: -122.819817, name: "endSphere")
+        terrainNode.addChildNode(redNode0)
         
         arView!.isUserInteractionEnabled = true
     }
@@ -153,18 +155,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             var terrainPosition = SCNVector3()
             let terrainNode:Any?
             if node.name == "terrainNode" {
-                print("terrainNode is at: \(node.position)")
+//                print("terrainNode is at: \(node.position)")
                 print("terrainSize is:\(node.boundingBox)")
 //                print(node.geometry?.boundingSphere.center.z)
                 terrainPosition = node.position
                 terrainNode = node as! TerrainNode
             }
             if node.name == "endSphere" {
-                print(node.position)
+                print("node positon:\(node.position)")
 //                node.position = SCNVector3(terrainPosition.x + (terrainNode as! TerrainNode).geometry?.boundingSphere,0,0)
             }
         })
     }
+    
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     
     
