@@ -28,7 +28,7 @@ class NodeFactory: NSObject {
         let latBegin = terrainLattitude - (0.07621358526/2)
         let lonBegin = terrainLongitude - (0.12192598544/2)
         
-        let busNode = SCNNode(geometry: SCNBox(width: 30, height: 30, length: 30, chamferRadius: 0))
+        let busNode = SCNNode(geometry: SCNBox(width: 10, height: 10, length: 30, chamferRadius: 0))
         busNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
         busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,380.004517,(8462.36328 + ((latBegin - lattitude)*RamansConstantForLat)))
         
@@ -77,7 +77,7 @@ class NodeFactory: NSObject {
     
     func createText(text: String, textColor: UIColor, position: SCNVector3, scale: SCNVector3) -> SCNNode {
         let text = SCNText(string: text, extrusionDepth: 2)
-        text.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 25)
+        text.font = UIFont(name: "AvenirNext-Medium", size: 25)
         
         let material = SCNMaterial()
         material.diffuse.contents = textColor
