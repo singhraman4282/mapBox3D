@@ -10,26 +10,43 @@ import UIKit
 
 class APITestViewController: UIViewController {
 
+    let annotationManager = AnnotationManager()
+    
+    var listings = [Annotation]()
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        annotationManager.downloadAnnotationsFromURL(lattitude: 49.110652, longitude: -122.867261, searchItem: "cafe") { (json, nil) -> (Void) in
+            if let json = json {
+                
+                let allPlaces = json["businesses"] as! [[String : Any]];
+                print(allPlaces.count)
+                
+                for i in 0..<allPlaces.count {
+                    var thisCafe = Annotation()
+                    var thisDict = allPlaces[i] as? [AnyHashable: Any]
+                    
+                    let coordinates = thisDict!["coordinates"] as! [AnyHashable : Any]
+                    thisCafe.image_url = thisDict!["image_url"] as! String
+                    thisCafe.name = thisDict!["name"] as! String
+                    
+                    self.listings.append(thisCafe)
+                    print("place name is \(thisCafe.name)")
+                    thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
+                    thisCafe.longitude = Double(coordinates["longitude"] as! Double)
+                    
+//                    print("Lattitude is \(thisCafe.lattitude)")
+//                    print("longitude is \(thisCafe.longitude)")
+                    
+                }
+            }
+        }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+    
 
 }

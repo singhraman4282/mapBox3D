@@ -13,13 +13,13 @@ import ARKit
 import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
-
+    
     @IBOutlet weak var arView: ARSCNView?
     @IBOutlet weak var placeButton: UIButton?
     @IBOutlet weak var moveImage: UIImageView?
     @IBOutlet weak var messageView: UIVisualEffectView?
     @IBOutlet weak var messageLabel: UILabel?
-   
+    
     
     
     @IBOutlet var xPosOutlet: UIButton!
@@ -40,6 +40,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var startScale: Float?
     var cityLattitude = 0.0
     var cityLongitude = 0.0
+    
+    let elevationManager = ElevationManager()
+    let annotationManager = AnnotationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -82,7 +85,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     //MARK: - LocationServices
     
     func enableBasicLocationServices() {
-       switch CLLocationManager.authorizationStatus() {
+        switch CLLocationManager.authorizationStatus() {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
             break
@@ -116,7 +119,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     private func insert(on plane: SCNNode, from hitResult: ARHitTestResult) {
-       
+        
         let terrainNode = nodeFactory.createTerrainNode(lattitude: cityLattitude, longitude: cityLongitude)
         
         let scale = Float(0.333 * hitResult.distance) / terrainNode.boundingSphere.radius
@@ -137,14 +140,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         })
         
         if cityLattitude == 0.0 {
-            let endSphere = nodeFactory.createMyPositionNode()
+            cityLattitude = (self.locationManager.location?.coordinate.latitude)!
+            cityLongitude = (self.locationManager.location?.coordinate.longitude)!
+            let endSphere = nodeFactory.createMyPositionNode(elevation: 0.0)
             terrainNode.addChildNode(endSphere)
+            annotationManager.downloadElevationFromCoordinates(lattitude: 49.1106646316641, longitude: -122.867296377542) { (json, error) -> (Void) in
+                if let json = json {
+                    if let results = json["results"] as? [[String: Any]] {
+                        endSphere.position = SCNVector3(endSphere.position.x,2*Float(self.elevationManager.createElevationFromjSon(json: results)),endSphere.position.z)
+                    }
+                }
+            }
+         
+//            let busNode = nodeFactory.createBusNode(lattitude: 49.122838, longitude: -122.867855, name: "endSphere")
+//            terrainNode.addChildNode(busNode)
         }
         
-
-        let redNode0 = nodeFactory.createBusNode(lattitude: 49.129189, longitude: -122.819817, name: "endSphere")
-        terrainNode.addChildNode(redNode0)
-        
+        addAnnotationsToNode(terrainNode)
         arView!.isUserInteractionEnabled = true
     }
     
@@ -156,7 +168,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             let terrainNode:Any?
             if node.name == "terrainNode" {
 //                print("terrainNode is at: \(node.position)")
-                print("terrainSize is:\(node.boundingBox)")
+//                print("terrainSize is:\(node.boundingBox)")
 //                print(node.geometry?.boundingSphere.center.z)
                 terrainPosition = node.position
                 terrainNode = node as! TerrainNode
@@ -174,6 +186,41 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     
+    func addAnnotationsToNode(_ terrainNode:SCNNode) {
+        
+        if cityLattitude == 0.0 {
+            cityLattitude = (self.locationManager.location?.coordinate.latitude)!
+            cityLongitude = (self.locationManager.location?.coordinate.longitude)!
+        }
+        
+        
+        
+        var listings = [Annotation]()
+        annotationManager.downloadAnnotationsFromURL(lattitude: cityLattitude, longitude: cityLongitude, searchItem: "cafe") { (json, nil) -> (Void) in
+            if let json = json {
+                
+                let allPlaces = json["businesses"] as! [[String : Any]];
+                print(allPlaces.count)
+                
+                for i in 0..<allPlaces.count {
+                    var thisCafe = Annotation()
+                    var thisDict = allPlaces[i] as? [AnyHashable: Any]
+                    
+                    let coordinates = thisDict!["coordinates"] as! [AnyHashable : Any]
+                    thisCafe.image_url = thisDict!["image_url"] as! String
+                    thisCafe.name = thisDict!["name"] as! String
+                    
+                    listings.append(thisCafe)
+                    thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
+                    thisCafe.longitude = Double(coordinates["longitude"] as! Double)
+                    
+                    let cafeNode = self.nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: "endSphere", insideTerrainWithLattitude: self.cityLattitude, insideTerrainWithLongitude: self.cityLongitude)
+                    terrainNode.addChildNode(cafeNode)
+                    
+                }
+            }
+        }
+    }
     
     
     
@@ -183,7 +230,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     
-    // MARK: - Message Helpers
     
     
     

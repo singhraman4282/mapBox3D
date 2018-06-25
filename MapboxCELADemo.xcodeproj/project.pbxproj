@@ -23,6 +23,9 @@
 		F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */; };
 		F18CC49A20E001AD0055C470 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49920E001AD0055C470 /* WelcomeViewController.swift */; };
 		F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49B20E00C190055C470 /* TableViewCell.swift */; };
+		F18CC49E20E070620055C470 /* ElevationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49D20E070620055C470 /* ElevationManager.swift */; };
+		F18CC4A220E135080055C470 /* AnnotationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC4A120E135070055C470 /* AnnotationManager.swift */; };
+		F18CC4A420E151230055C470 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC4A320E151230055C470 /* Annotation.swift */; };
 		F1E86D0520DEDBDB003D5515 /* NodeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0420DEDBDB003D5515 /* NodeFactory.swift */; };
 		F1E86D0920DF135A003D5515 /* ViewController+ARSCNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0820DF135A003D5515 /* ViewController+ARSCNView.swift */; };
 		F1E86D0F20DF194E003D5515 /* ViewController+gestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E86D0E20DF194E003D5515 /* ViewController+gestures.swift */; };
@@ -63,6 +66,9 @@
 		F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNExtensions.swift; sourceTree = "<group>"; };
 		F18CC49920E001AD0055C470 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		F18CC49B20E00C190055C470 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F18CC49D20E070620055C470 /* ElevationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationManager.swift; sourceTree = "<group>"; };
+		F18CC4A120E135070055C470 /* AnnotationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationManager.swift; sourceTree = "<group>"; };
+		F18CC4A320E151230055C470 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
 		F1E86D0420DEDBDB003D5515 /* NodeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodeFactory.swift; sourceTree = "<group>"; };
 		F1E86D0820DF135A003D5515 /* ViewController+ARSCNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+ARSCNView.swift"; sourceTree = "<group>"; };
 		F1E86D0E20DF194E003D5515 /* ViewController+gestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+gestures.swift"; sourceTree = "<group>"; };
@@ -127,12 +133,15 @@
 			children = (
 				F17E9B5B20DC8BAF006C6BF0 /* AppDelegate.swift */,
 				F17E9B5D20DC8BAF006C6BF0 /* ViewController.swift */,
+				F18CC49D20E070620055C470 /* ElevationManager.swift */,
+				F18CC4A120E135070055C470 /* AnnotationManager.swift */,
 				F1E86D0820DF135A003D5515 /* ViewController+ARSCNView.swift */,
 				F1E86D0E20DF194E003D5515 /* ViewController+gestures.swift */,
 				F1E86D0420DEDBDB003D5515 /* NodeFactory.swift */,
 				F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */,
 				F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */,
 				F17E9B5F20DC8BAF006C6BF0 /* Main.storyboard */,
+				F18CC4A320E151230055C470 /* Annotation.swift */,
 				F18CC49B20E00C190055C470 /* TableViewCell.swift */,
 				F18CC49920E001AD0055C470 /* WelcomeViewController.swift */,
 				F1E86D1020DF20DD003D5515 /* APITestViewController.swift */,
@@ -262,9 +271,12 @@
 				F1E86D0520DEDBDB003D5515 /* NodeFactory.swift in Sources */,
 				F17E9B5E20DC8BAF006C6BF0 /* ViewController.swift in Sources */,
 				F17E9B7820DC8F17006C6BF0 /* FocusSquare.swift in Sources */,
+				F18CC4A420E151230055C470 /* Annotation.swift in Sources */,
 				F1E86D0920DF135A003D5515 /* ViewController+ARSCNView.swift in Sources */,
 				F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */,
+				F18CC49E20E070620055C470 /* ElevationManager.swift in Sources */,
 				F1E86D0F20DF194E003D5515 /* ViewController+gestures.swift in Sources */,
+				F18CC4A220E135080055C470 /* AnnotationManager.swift in Sources */,
 				F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */,
 				F17E9B5C20DC8BAF006C6BF0 /* AppDelegate.swift in Sources */,
 				F1E86D1120DF20DD003D5515 /* APITestViewController.swift in Sources */,
