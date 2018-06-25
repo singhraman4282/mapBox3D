@@ -20,7 +20,7 @@ class NodeFactory: NSObject {
     private let elevationManager = ElevationManager()
     private let annotationManager = AnnotationManager()
     
-    func createBusNode(lattitude:Double, longitude:Double, name:String, insideTerrainWithLattitude terrainLattitude:Double, insideTerrainWithLongitude terrainLongitude:Double) -> SCNNode {
+    func createBusNode(lattitude:Double, longitude:Double, name:String, insideTerrainWithLattitude terrainLattitude:Double, insideTerrainWithLongitude terrainLongitude:Double, annotationColor: UIColor) -> SCNNode {
         
 //        let latBegin = (self.locationManager.location?.coordinate.latitude)! - (0.07621358526/2)
 //        let lonBegin = (self.locationManager.location?.coordinate.longitude)! - (0.12192598544/2)
@@ -33,6 +33,12 @@ class NodeFactory: NSObject {
         busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,380.004517,(8462.36328 + ((latBegin - lattitude)*RamansConstantForLat)))
         
         busNode.name = name
+        let rotateAction = SCNAction.rotate(by: 2 * CGFloat.pi, around: SCNVector3(0, 0.5, 0), duration: 5)
+        let foreverRotation = SCNAction.repeatForever(rotateAction)
+        
+        let node = self.createText(text: name, textColor: annotationColor, position: SCNVector3(0,20,0), scale: SCNVector3(3,3,3))
+        node.runAction(foreverRotation)
+        busNode.addChildNode(node)
         
         return busNode
     }
@@ -67,6 +73,31 @@ class NodeFactory: NSObject {
         terrainNode.name = "terrainNode"
         
         return terrainNode
+    }
+    
+    func createText(text: String, textColor: UIColor, position: SCNVector3, scale: SCNVector3) -> SCNNode {
+        let text = SCNText(string: text, extrusionDepth: 2)
+        text.font = UIFont(name: "HelveticaNeue-CondensedBlack", size: 25)
+        
+        let material = SCNMaterial()
+        material.diffuse.contents = textColor
+        text.materials = [material]
+        
+        let node = SCNNode(geometry: text)
+        node.scale = scale
+        node.position = position
+        
+        // rotate at the center of the nodes width and height
+        let min = node.boundingBox.min
+        let max = node.boundingBox.max
+        node.pivot = SCNMatrix4MakeTranslation(
+            min.x + /* (+ 0.5 *) */ (max.x - min.x) / 2,
+            min.y + /* (+ 0.5 *) */ (max.y - min.y) / 2,
+            min.z + /* (+ 0.5 *) */ (max.z - min.z) / 2
+        )
+        
+        node.name = "scoreNode"
+        return node
     }
     
 }

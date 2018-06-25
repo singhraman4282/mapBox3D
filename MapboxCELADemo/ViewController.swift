@@ -40,6 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var startScale: Float?
     var cityLattitude = 0.0
     var cityLongitude = 0.0
+    var placeNamesArray = [String]()
     
     let elevationManager = ElevationManager()
     let annotationManager = AnnotationManager()
@@ -152,11 +153,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
             }
          
-//            let busNode = nodeFactory.createBusNode(lattitude: 49.122838, longitude: -122.867855, name: "endSphere")
-//            terrainNode.addChildNode(busNode)
         }
         
-        addAnnotationsToNode(terrainNode)
+//        addAnnotationsToNode(terrainNode)
+        addAnnotationsToNode(terrainNode, annotationType: "cafe", annotationTextColor: UIColor.red)
+        addAnnotationsToNode(terrainNode, annotationType: "school", annotationTextColor: UIColor.blue)
+        addAnnotationsToNode(terrainNode, annotationType: "hospital", annotationTextColor: UIColor.brown)
         arView!.isUserInteractionEnabled = true
     }
     
@@ -186,7 +188,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     
     
-    func addAnnotationsToNode(_ terrainNode:SCNNode) {
+    func addAnnotationsToNode(_ terrainNode:SCNNode, annotationType:String, annotationTextColor: UIColor) {
         
         if cityLattitude == 0.0 {
             cityLattitude = (self.locationManager.location?.coordinate.latitude)!
@@ -196,7 +198,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         
         var listings = [Annotation]()
-        annotationManager.downloadAnnotationsFromURL(lattitude: cityLattitude, longitude: cityLongitude, searchItem: "cafe") { (json, nil) -> (Void) in
+        annotationManager.downloadAnnotationsFromURL(lattitude: cityLattitude, longitude: cityLongitude, searchItem: annotationType) { (json, nil) -> (Void) in
             if let json = json {
                 
                 let allPlaces = json["businesses"] as! [[String : Any]];
@@ -214,8 +216,16 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                     thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
                     thisCafe.longitude = Double(coordinates["longitude"] as! Double)
                     
-                    let cafeNode = self.nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: "endSphere", insideTerrainWithLattitude: self.cityLattitude, insideTerrainWithLongitude: self.cityLongitude)
-                    terrainNode.addChildNode(cafeNode)
+                    let cafeNode = self.nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: thisCafe.name, insideTerrainWithLattitude: self.cityLattitude, insideTerrainWithLongitude: self.cityLongitude, annotationColor: annotationTextColor)
+                    
+                    if (thisCafe.lattitude > self.cityLattitude-(0.07621358526/2) && (thisCafe.lattitude < self.cityLattitude+(0.07621358526/2))) && (thisCafe.longitude > self.cityLongitude - (0.12192598544/2) && thisCafe.lattitude < self.cityLattitude+(0.07621358526/2)) && (thisCafe.longitude < self.cityLongitude + (0.12192598544/2)) {
+                        terrainNode.addChildNode(cafeNode)
+                        if !self.placeNamesArray.contains(thisCafe.name) {
+                            self.placeNamesArray.append(thisCafe.name)
+                        }
+                    }
+                    
+//                    terrainNode.addChildNode(cafeNode)
                     
                 }
             }
