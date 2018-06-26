@@ -20,6 +20,9 @@ class NodeFactory: NSObject {
     private let elevationManager = ElevationManager()
     private let annotationManager = AnnotationManager()
     
+//    
+    
+    
     func createBusNode(lattitude:Double, longitude:Double, name:String, insideTerrainWithLattitude terrainLattitude:Double, insideTerrainWithLongitude terrainLongitude:Double, annotationColor: UIColor) -> SCNNode {
         
 //        let latBegin = (self.locationManager.location?.coordinate.latitude)! - (0.07621358526/2)
@@ -28,17 +31,39 @@ class NodeFactory: NSObject {
         let latBegin = terrainLattitude - (0.07621358526/2)
         let lonBegin = terrainLongitude - (0.12192598544/2)
         
-        let busNode = SCNNode(geometry: SCNBox(width: 10, height: 10, length: 30, chamferRadius: 0))
+        let busNode = SCNNode(geometry: SCNBox(width: 10, height: 30, length: 10, chamferRadius: 0))
         busNode.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-        busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,380.004517,(8462.36328 + ((latBegin - lattitude)*RamansConstantForLat)))
+        busNode.position = SCNVector3(-(lonBegin - longitude)*RamansConstantForLon,50.004517,(8462.36328 + ((latBegin - lattitude)*RamansConstantForLat)))
         
         busNode.name = name
-        let rotateAction = SCNAction.rotate(by: 2 * CGFloat.pi, around: SCNVector3(0, 0.5, 0), duration: 5)
+        let rotateAction = SCNAction.rotate(by: 2 * CGFloat.pi, around: SCNVector3(0, 0.5, 0), duration: 10)
         let foreverRotation = SCNAction.repeatForever(rotateAction)
+        let goUpAction = SCNAction.move(by: SCNVector3(0,500,0), duration: 1)
+        let goDownAction = SCNAction.move(by: SCNVector3(0,-500,0), duration: 1)
+        let sequence = SCNAction.sequence([goUpAction, goDownAction])
+        let foreverSequence = SCNAction.repeatForever(sequence)
+//        busNode.runAction(foreverSequence, completionHandler:nil)
         
-        let node = self.createText(text: name, textColor: annotationColor, position: SCNVector3(0,20,0), scale: SCNVector3(3,3,3))
+        let node = self.createText(text: name, textColor: annotationColor, position: SCNVector3(0,40,0), scale: SCNVector3(3,3,3))
         node.runAction(foreverRotation)
+
         busNode.addChildNode(node)
+        busNode.position = SCNVector3(busNode.position.x,30000.0,busNode.position.z)
+        
+        annotationManager.downloadElevationFromCoordinates(lattitude: lattitude, longitude: longitude) { (json, nil) -> (Void) in
+            if let json = json {
+                if let results = json["results"] as? [[String: Any]] {
+                    
+                    let moveToElevationAction = SCNAction.move(to: SCNVector3(Double(busNode.position.x),8*self.elevationManager.createElevationFromjSon(json: results),Double(busNode.position.z)), duration: 1)
+                
+                    busNode.runAction(moveToElevationAction)
+                    
+                }
+                
+            }
+        }
+        
+        
         
         return busNode
     }
@@ -64,8 +89,6 @@ class NodeFactory: NSObject {
             latToBePlaced = lattitude
             lonToBePlaced = longitude
         }
-        
-        
         
         let terrainNode = TerrainNode(minLat: latToBePlaced! - (0.07621358526/2), maxLat: latToBePlaced! + (0.07621358526/2),
                                      minLon: lonToBePlaced! - (0.12192598544/2), maxLon: lonToBePlaced! + (0.12192598544/2))
@@ -100,17 +123,7 @@ class NodeFactory: NSObject {
         return node
     }
     
+    
+    
 }
 
-
-/*
- 
- annotationManager.downloadElevationFromCoordinates(lattitude: lattitude, longitude: longitude) { (json, error) -> (Void) in
- if let json = json {
- if let results = json["results"] as? [[String: Any]] {
- busNode.position = SCNVector3(busNode.position.x,2*Float(self.elevationManager.createElevationFromjSon(json: results)),busNode.position.z)
- }
- }
- }
- 
- */

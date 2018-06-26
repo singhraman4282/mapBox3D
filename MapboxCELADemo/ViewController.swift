@@ -19,15 +19,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var moveImage: UIImageView?
     @IBOutlet weak var messageView: UIVisualEffectView?
     @IBOutlet weak var messageLabel: UILabel?
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var searchContainerView: UIView!
+    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var lookupButtonOutlet: UIButton!
     
     
     
-    @IBOutlet var xPosOutlet: UIButton!
-    @IBOutlet var yPosOutlet: UIButton!
-    @IBOutlet var zPosOutlet: UIButton!
-    @IBOutlet var xNegOutlet: UIButton!
-    @IBOutlet var yNegOutlet: UIButton!
-    @IBOutlet var zNegOutlet: UIButton!
+    
+   
     
     
     let locationManager = CLLocationManager()
@@ -40,10 +40,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var startScale: Float?
     var cityLattitude = 0.0
     var cityLongitude = 0.0
+    var cityName = ""
     var placeNamesArray = [String]()
     
     let elevationManager = ElevationManager()
     let annotationManager = AnnotationManager()
+    
+    
+    var terrainNodeReference:(Any)? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +55,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         print(cityLongitude)
         enableBasicLocationServices()
         locationManager.delegate = self
+        searchContainerView.isHidden = true
+        lookupButtonOutlet.isHidden = true
         
         arView!.debugOptions = [ARSCNDebugOptions.showFeaturePoints]
         arView!.session.delegate = self
@@ -122,6 +128,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     private func insert(on plane: SCNNode, from hitResult: ARHitTestResult) {
         
         let terrainNode = nodeFactory.createTerrainNode(lattitude: cityLattitude, longitude: cityLongitude)
+        terrainNodeReference = terrainNode
         
         let scale = Float(0.333 * hitResult.distance) / terrainNode.boundingSphere.radius
         terrainNode.transform = SCNMatrix4MakeScale(scale, scale, scale)
@@ -138,6 +145,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         terrainNode.fetchTerrainTexture("mapbox/satellite-v9", zoom: 14, progress: { _, _ in }, completion: { image in
             NSLog("Texture load complete")
             terrainNode.geometry?.materials[4].diffuse.contents = image
+            self.cityLabel.text = self.cityName
+            self.lookupButtonOutlet.isHidden = false
         })
         
         if cityLattitude == 0.0 {
@@ -155,94 +164,76 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
          
         }
         
-//        addAnnotationsToNode(terrainNode)
-        addAnnotationsToNode(terrainNode, annotationType: "cafe", annotationTextColor: UIColor.red)
-        addAnnotationsToNode(terrainNode, annotationType: "school", annotationTextColor: UIColor.blue)
-        addAnnotationsToNode(terrainNode, annotationType: "hospital", annotationTextColor: UIColor.brown)
+
+//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "cafe", annotationTextColor: UIColor.green, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
+//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "school", annotationTextColor: UIColor.blue, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
+//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "hospital", annotationTextColor: UIColor.white, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
+
+
+//
         arView!.isUserInteractionEnabled = true
     }
     
     let moveFactor:Float = 10.0
     
-    @IBAction func printPosition(_ sender: UIButton) {
-        self.arView?.scene.rootNode.enumerateChildNodes({ (node, _) in
-            var terrainPosition = SCNVector3()
-            let terrainNode:Any?
-            if node.name == "terrainNode" {
-//                print("terrainNode is at: \(node.position)")
-//                print("terrainSize is:\(node.boundingBox)")
-//                print(node.geometry?.boundingSphere.center.z)
-                terrainPosition = node.position
-                terrainNode = node as! TerrainNode
-            }
-            if node.name == "endSphere" {
-                print("node positon:\(node.position)")
-//                node.position = SCNVector3(terrainPosition.x + (terrainNode as! TerrainNode).geometry?.boundingSphere,0,0)
-            }
-        })
-    }
+   
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
     
-    
-    func addAnnotationsToNode(_ terrainNode:SCNNode, annotationType:String, annotationTextColor: UIColor) {
-        
-        if cityLattitude == 0.0 {
-            cityLattitude = (self.locationManager.location?.coordinate.latitude)!
-            cityLongitude = (self.locationManager.location?.coordinate.longitude)!
-        }
-        
-        
-        
-        var listings = [Annotation]()
-        annotationManager.downloadAnnotationsFromURL(lattitude: cityLattitude, longitude: cityLongitude, searchItem: annotationType) { (json, nil) -> (Void) in
-            if let json = json {
-                
-                let allPlaces = json["businesses"] as! [[String : Any]];
-                print(allPlaces.count)
-                
-                for i in 0..<allPlaces.count {
-                    var thisCafe = Annotation()
-                    var thisDict = allPlaces[i] as? [AnyHashable: Any]
-                    
-                    let coordinates = thisDict!["coordinates"] as! [AnyHashable : Any]
-                    thisCafe.image_url = thisDict!["image_url"] as! String
-                    thisCafe.name = thisDict!["name"] as! String
-                    
-                    listings.append(thisCafe)
-                    thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
-                    thisCafe.longitude = Double(coordinates["longitude"] as! Double)
-                    
-                    let cafeNode = self.nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: thisCafe.name, insideTerrainWithLattitude: self.cityLattitude, insideTerrainWithLongitude: self.cityLongitude, annotationColor: annotationTextColor)
-                    
-                    if (thisCafe.lattitude > self.cityLattitude-(0.07621358526/2) && (thisCafe.lattitude < self.cityLattitude+(0.07621358526/2))) && (thisCafe.longitude > self.cityLongitude - (0.12192598544/2) && thisCafe.lattitude < self.cityLattitude+(0.07621358526/2)) && (thisCafe.longitude < self.cityLongitude + (0.12192598544/2)) {
-                        terrainNode.addChildNode(cafeNode)
-                        if !self.placeNamesArray.contains(thisCafe.name) {
-                            self.placeNamesArray.append(thisCafe.name)
-                        }
-                    }
-                    
-//                    terrainNode.addChildNode(cafeNode)
-                    
-                }
-            }
-        }
+    @IBAction func lookupButtonPressed(_ sender: UIButton) {
+        searchContainerView.isHidden = false
+        searchTextField.text = ""
+        searchTextField.becomeFirstResponder()
+        lookupButtonOutlet.isHidden = true
     }
     
     
     
+    @IBAction func searchButtonPressed(_ sender: UIButton) {
+        lookupButtonOutlet.isHidden = false
+        searchTextField.resignFirstResponder()
+        searchContainerView.isHidden = true
+//        searchTextField.text = ""
+        
+//        for placeName in 0..<annotationManager.placeNamesArray.count {
+//            let placeNode = self.arView?.scene.rootNode.childNode(withName: annotationManager.placeNamesArray[placeName], recursively: true)
+//            placeNode?.removeFromParentNode()
+//        }
+//        annotationManager.placeNamesArray = [String]()
+        
+        annotationManager.addAnnotationsToNode(terrainNodeReference as! SCNNode, annotationType: searchTextField.text!.replacingOccurrences(of: " ", with: ""), annotationTextColor: UIColor.white, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
+        
+        
+        
+        
+    }
+    
+    
+    @IBAction func clearButtonPressed(_ sender: UIButton) {
+        
+        for placeName in 0..<annotationManager.placeNamesArray.count {
+            let placeNode = self.arView?.scene.rootNode.childNode(withName: annotationManager.placeNamesArray[placeName], recursively: true)
+            placeNode?.removeFromParentNode()
+        }
+        annotationManager.placeNamesArray = [String]()
+    }
+    
+    @IBAction func hideButtonPressed(_ sender: UIButton) {
+        searchContainerView.isHidden = true
+        searchTextField.text = ""
+        searchTextField.resignFirstResponder()
+        lookupButtonOutlet.isHidden = false
+    }
     
     
     
-    
-    
-    
-    
-    
-    
+    @IBAction func searchTextFieldDidEndOnExit(_ sender: UITextField) {
+        
+        
+    }
     
     
     

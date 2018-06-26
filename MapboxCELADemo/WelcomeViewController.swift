@@ -19,8 +19,9 @@ class WelcomeViewController: UIViewController, UITableViewDelegate, UITableViewD
                     "Great Wall of China": ["Lattitude":40.4315283, "Longitude":116.5677432],
                     "São Paulo": ["Lattitude":-23.5912853, "Longitude":-46.6613061],
                     "The Roman Colosseum": ["Lattitude":41.8902102, "Longitude":12.4900422],
-                    
-        
+                    "Whistler":["Lattitude":50.0935463, "Longitude":-122.9945057],
+                    "Toronto":["Lattitude":43.6425701, "Longitude":-79.3892455],
+                    "Pyongyang, North Korea":["Lattitude":39.0292506, "Longitude":125.6720721]
         
         
     ]
@@ -58,6 +59,9 @@ class WelcomeViewController: UIViewController, UITableViewDelegate, UITableViewD
             if let arViewController = segue.destination as? ViewController {
                 arViewController.cityLattitude = cityDict[selectedCity]!["Lattitude"]!
                 arViewController.cityLongitude = cityDict[selectedCity]!["Longitude"]!
+                if selectedCity != "Current Location" {
+                arViewController.cityName = selectedCity
+                }
             }
         }
     }
