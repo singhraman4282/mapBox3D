@@ -7,5 +7,5 @@ target 'MapboxCELADemo' do
 
   # Pods for MapboxCELADemo
 pod 'MapboxSceneKit', :git => 'https://github.com/mapbox/mapbox-scenekit.git'
-
+pod 'GooglePlaces'
 end

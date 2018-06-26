@@ -50,18 +50,21 @@ class NodeFactory: NSObject {
         busNode.addChildNode(node)
         busNode.position = SCNVector3(busNode.position.x,30000.0,busNode.position.z)
         
-        annotationManager.downloadElevationFromCoordinates(lattitude: lattitude, longitude: longitude) { (json, nil) -> (Void) in
-            if let json = json {
-                if let results = json["results"] as? [[String: Any]] {
-                    
-                    let moveToElevationAction = SCNAction.move(to: SCNVector3(Double(busNode.position.x),8*self.elevationManager.createElevationFromjSon(json: results),Double(busNode.position.z)), duration: 1)
-                
-                    busNode.runAction(moveToElevationAction)
-                    
-                }
-                
-            }
-        }
+        let moveToElevationAction = SCNAction.move(to: SCNVector3(Double(busNode.position.x),200,Double(busNode.position.z)), duration: 1)
+        busNode.runAction(moveToElevationAction)
+        
+        
+//        annotationManager.downloadElevationFromCoordinates(lattitude: lattitude, longitude: longitude) { (json, nil) -> (Void) in
+//            if let json = json {
+//                if let results = json["results"] as? [[String: Any]] {
+//
+//                    let moveToElevationAction = SCNAction.move(to: SCNVector3(Double(busNode.position.x),8*self.elevationManager.createElevationFromjSon(json: results),Double(busNode.position.z)), duration: 1)
+//                    busNode.runAction(moveToElevationAction)
+//
+//                }
+//
+//            }
+//        }
         
         
         

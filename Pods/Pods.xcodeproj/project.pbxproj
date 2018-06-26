@@ -7,104 +7,104 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		011C5CFB913E9FD8027EC09071255537 /* TSKSPKIHashCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E25DEE3CB222D00DD9442FE7D07567 /* TSKSPKIHashCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0638FC9C77DD330266CE4524B3D969D7 /* TrustKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCD654ECC642BED3B7195F194E62D98 /* TrustKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AD82FEFF65DD0DA07B13C33667778EE /* MMEDependencyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7521887BF0734D8073F1C91E962F0BB7 /* MMEDependencyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E654F97A08CB575AE056FEC43494FF7 /* MMETypes.h in Headers */ = {isa = PBXBuildFile; fileRef = F09115B1F62C067CAB50EFCBBB5B5D65 /* MMETypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0FA5310E16764335A23FF3DCC2011FE0 /* TSKSPKIHashCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FAE494E7B5EEEC0EA7AA8A6E522FC8B0 /* TSKSPKIHashCache.m */; };
-		0FC59506711C61B63452829C4EA0F237 /* TSKPublicKeyAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 451EB4B5882488ACB1603D0FA57CC566 /* TSKPublicKeyAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19D9E33F7F95A62573ACCB96D4DF5A32 /* TSKPinningValidatorResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 8162C3659DDDC83866BF7173B653BED4 /* TSKPinningValidatorResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1A52D6BFF9CC2682CFDEE6584C2D3BB7 /* MapboxHTTPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01529CEF305B8E04C0E780E55F048E93 /* MapboxHTTPAPI.swift */; };
-		1DF718880269D1D0B8B74C5E73D900E8 /* TSKPinFailureReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E6E95782C6D80755843840B4EB02B5E /* TSKPinFailureReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E2A7F336FF0968251CC1A9A74F9C35F /* MapboxSceneKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 79A41073BE0895F62B4640BFCCE8D23A /* MapboxSceneKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		20396D7D0999A9EE35970BDDA7814B1B /* MMETimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7901C79E522900E86F267977D240BDCC /* MMETimerManager.m */; };
-		2B6E7C12F858807E391458387737F3A9 /* MMEEventLogReportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DF21345B7D505EFB00FDAB7966DA015 /* MMEEventLogReportViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DE37019CA4E8192F75DA93B5DD06834 /* TSKTrustDecision.h in Headers */ = {isa = PBXBuildFile; fileRef = FB338B622DB70D416E2BE6228C76AA1F /* TSKTrustDecision.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3070D948281592BC577DCD40137E545F /* MMEConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 21DCB145616AC2FA58BE32CB4EDF11BE /* MMEConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		31320EB1D78C2E87DFD9344F89A8D818 /* CLLocation+MMEMobileEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CD088E20D7938137CA7070170BABDB9 /* CLLocation+MMEMobileEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		333CA710244556CD33B3A30642D167DB /* MMEEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0CC2841AECBFE2631126E1A55A0559 /* MMEEventsManager.m */; };
-		3A49DCD3AA6439579F4511D670DAD166 /* TSKPinningValidator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D8DD01F8A76BE5470B4053F645CC07 /* TSKPinningValidator_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B81B1A96F8BF8E62E30A2F38B94F3C8 /* MMELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2F34686D47F429954F0CCB4E9020D4 /* MMELocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C5D9E90188B41C3EAFBCFB7117EE98C /* MMENSURLSessionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99F3C220E14E70BFB0C7886ED0614CF0 /* MMENSURLSessionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D32AF8C68D876BC35891B7D98FA54CB /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55460B89050F3118428F0A2039E9973E /* AsyncOperation.swift */; };
-		3DCFF0C9DC05F41AA935B1459455643B /* MMETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FE87D440DBBE6DC9FB5B7619972786E /* MMETypes.m */; };
+		011C5CFB913E9FD8027EC09071255537 /* TSKSPKIHashCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 81C97139F94AB2D2AEAB3E2557AEC314 /* TSKSPKIHashCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0638FC9C77DD330266CE4524B3D969D7 /* TrustKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FE9B4CFEA1D27CD618EAD90985A45C7 /* TrustKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AD82FEFF65DD0DA07B13C33667778EE /* MMEDependencyManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E1C18B28407C0662CDDD86D8170C38F8 /* MMEDependencyManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E654F97A08CB575AE056FEC43494FF7 /* MMETypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 716587C9715F0C7F1DA16965638A2A3B /* MMETypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FA5310E16764335A23FF3DCC2011FE0 /* TSKSPKIHashCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E15E828A84B3C67C934AD481C14353D0 /* TSKSPKIHashCache.m */; };
+		0FC59506711C61B63452829C4EA0F237 /* TSKPublicKeyAlgorithm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2610919C108F71C42AFE2448C7D47139 /* TSKPublicKeyAlgorithm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19D9E33F7F95A62573ACCB96D4DF5A32 /* TSKPinningValidatorResult.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BC8E8BA53971F91D16238C37872C6BC /* TSKPinningValidatorResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A52D6BFF9CC2682CFDEE6584C2D3BB7 /* MapboxHTTPAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CD504DE1245A62B8FF02E5046EC2BE /* MapboxHTTPAPI.swift */; };
+		1DF718880269D1D0B8B74C5E73D900E8 /* TSKPinFailureReport.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E0A8833A63787FE6E84EB158CD2E26 /* TSKPinFailureReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E2A7F336FF0968251CC1A9A74F9C35F /* MapboxSceneKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 39F9041DB1C43102C0565A0510826F81 /* MapboxSceneKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20396D7D0999A9EE35970BDDA7814B1B /* MMETimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD36ECAFAC246A395662968D9F7E781A /* MMETimerManager.m */; };
+		2B6E7C12F858807E391458387737F3A9 /* MMEEventLogReportViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 227400A5A8F256BA19373F836A873AAB /* MMEEventLogReportViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE37019CA4E8192F75DA93B5DD06834 /* TSKTrustDecision.h in Headers */ = {isa = PBXBuildFile; fileRef = F88956DB0792995498C07E65CF629ED1 /* TSKTrustDecision.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3070D948281592BC577DCD40137E545F /* MMEConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A42DB6C9F471C8F7744646C16E2CE9F /* MMEConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31320EB1D78C2E87DFD9344F89A8D818 /* CLLocation+MMEMobileEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = F7471CC15D47B98FCF60DFE3C187A547 /* CLLocation+MMEMobileEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		333CA710244556CD33B3A30642D167DB /* MMEEventsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7633414098143E169C0DFB6FDC80D7 /* MMEEventsManager.m */; };
+		3A49DCD3AA6439579F4511D670DAD166 /* TSKPinningValidator_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 512A02F52C1F2D3AF0D3D46B9B9D48AA /* TSKPinningValidator_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B81B1A96F8BF8E62E30A2F38B94F3C8 /* MMELocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A76548FB9C19683FA829C113A048FBC /* MMELocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C5D9E90188B41C3EAFBCFB7117EE98C /* MMENSURLSessionWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DA4CE2DC90B9CD15734E7AE82FFD465 /* MMENSURLSessionWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D32AF8C68D876BC35891B7D98FA54CB /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC0B7AE97EE5CD4589DEF4705F86874 /* AsyncOperation.swift */; };
+		3DCFF0C9DC05F41AA935B1459455643B /* MMETypes.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DA1B177A64F09E09B94FBEF999B2A5 /* MMETypes.m */; };
 		3E8CBFB89C0F4E3ED91B04BBCBE3B5E8 /* Pods-MapboxCELADemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C57EB3EACABED8FDBE31761EE49243 /* Pods-MapboxCELADemo-dummy.m */; };
-		401BA3B5CEBB9872572F90000BCFB989 /* reporting_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 99178A92176116451640645A6418E064 /* reporting_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40B4B5293DDE5420CEADE0CC79F7053C /* TSKPinFailureReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 76ED120DC74D3393A0782C0458704658 /* TSKPinFailureReport.m */; };
-		42F1EE2DF6ED696F99A51D5AA74E65F7 /* MMECategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 379C2167DA0210EEAD91FFA8A5F7AF06 /* MMECategoryLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		452938683FB1341076663F75A6C54F1B /* MMETrustKitWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A9F2FC0A53EDCCF05D1CA5A01E0B17 /* MMETrustKitWrapper.m */; };
-		45D1D159B900E6C961FA957384BB33EA /* vendor_identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F21311CC3CCBB1A65FD52E4B26791BC3 /* vendor_identifier.m */; };
-		49122D77C0CCB3751C864C21AF4FF6F2 /* MMEEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 2069081E95FBD74336EE0B574C3EEB43 /* MMEEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A9545C27869EC3CDCEF80EBA80A94D5 /* TerrainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AB561C11A5C7E4C560130973444040 /* TerrainNode.swift */; };
-		4B065DBD84FFEEE26732CAE69B79DBA2 /* ImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA097B8A40C956C54A609FB21333BCD /* ImageBuilder.swift */; };
-		4FAD2CE54AD635458503AB1E4C038F88 /* MapboxSceneKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1815DA7DF04844ED43FC881B38243A6F /* MapboxSceneKit-dummy.m */; };
-		4FB35307FE832FC1781464DBFF8D5BA8 /* parse_configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A8AFB113BECB0008EA7A992F8E19CF0 /* parse_configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50003BE1FBCFDC4AB3ECFB9A89DEA569 /* TSKTrustKitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EA2F0260BB3F7568E868FCF4BFF4577 /* TSKTrustKitConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5001BCFD4A05A82BD7CAEB34C297D75A /* MapboxMobileEvents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 48DFA927C9C8794E9AE81F8D46B8C5EA /* MapboxMobileEvents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		508F0A884CE49CD8C14A9392F1DBBFFC /* MMEEventsService.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F385DDBCD80F0A220DC84100304987F /* MMEEventsService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50DB7195A9B706FCEA5508686E97F117 /* MMEAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 3572ED24DEF5AB1E03689F52672C73E9 /* MMEAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5357695FF0FE8A8DEFD88C76063D5721 /* MMEDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99E9B415FFF963C8381F10312741DA /* MMEDependencyManager.m */; };
-		58BDEECD1A4D0450AE3139F1AC116559 /* CLLocation+MMEMobileEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = C86A8473EC1167BDE5282831950000BC /* CLLocation+MMEMobileEvents.m */; };
-		5A0AD000CF4C4C870873C83642A1534D /* ssl_pin_verifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BC983F29C232EA68E5AC8A3CB7CFA562 /* ssl_pin_verifier.m */; };
-		6282BF3DA2396B4778C5284B8CA395EB /* MMETrustKitWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DC8F4BF3E5EE9D521205FE9B2E1E12A /* MMETrustKitWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6411B1A481EE2DB830DA5F0E0EC60461 /* parse_configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9500226402F3ECA03F07F5D3A56F36EC /* parse_configuration.m */; };
-		668FE5F2B0A0E16F5E42CBAD464240D2 /* NSData+MMEGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CFF7A9A32BDB340AB1BEE20A33B18F /* NSData+MMEGZIP.m */; };
-		6DE5569FDDF598E911B3CAF7B8F8D292 /* TSKReportsRateLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 959ED505E64DBD749035C83E70133F65 /* TSKReportsRateLimiter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DE59565F39263410D78E41AC7B3DF2D /* ssl_pin_verifier.h in Headers */ = {isa = PBXBuildFile; fileRef = D5F826ADD0B625F1F10170E412336781 /* ssl_pin_verifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		401BA3B5CEBB9872572F90000BCFB989 /* reporting_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 72659A773D0C524AA0512421510CCB7B /* reporting_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40B4B5293DDE5420CEADE0CC79F7053C /* TSKPinFailureReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A2D87B0C5EE00956E91F6A20A8D2C84 /* TSKPinFailureReport.m */; };
+		42F1EE2DF6ED696F99A51D5AA74E65F7 /* MMECategoryLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = B5FE6977B73FC6C5DEFA91EE5B5DC74C /* MMECategoryLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		452938683FB1341076663F75A6C54F1B /* MMETrustKitWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = CF8E19B144F1D9AB010ED3AAEFA60B55 /* MMETrustKitWrapper.m */; };
+		45D1D159B900E6C961FA957384BB33EA /* vendor_identifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D915B3BA06F5543BEB275CE1419544 /* vendor_identifier.m */; };
+		49122D77C0CCB3751C864C21AF4FF6F2 /* MMEEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE8E8FDF7483442263C3C8DAA4AC57F /* MMEEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A9545C27869EC3CDCEF80EBA80A94D5 /* TerrainNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C4D9749C438574BC24FF2C2627DECD /* TerrainNode.swift */; };
+		4B065DBD84FFEEE26732CAE69B79DBA2 /* ImageBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78A1E95718E8ED2AA67B0CFC018DB39 /* ImageBuilder.swift */; };
+		4FAD2CE54AD635458503AB1E4C038F88 /* MapboxSceneKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 298E32D2472814DEE20E94E782B536CE /* MapboxSceneKit-dummy.m */; };
+		4FB35307FE832FC1781464DBFF8D5BA8 /* parse_configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = CC090ABF11D5EFED0B6505A63BF669EA /* parse_configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50003BE1FBCFDC4AB3ECFB9A89DEA569 /* TSKTrustKitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 0468B21911ECDB4E272C9F9C2650AC02 /* TSKTrustKitConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5001BCFD4A05A82BD7CAEB34C297D75A /* MapboxMobileEvents-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8465274F33166F7BF5FA527E92A6978C /* MapboxMobileEvents-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		508F0A884CE49CD8C14A9392F1DBBFFC /* MMEEventsService.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D92F7B30E0ADF34A63F38FE7997A365 /* MMEEventsService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50DB7195A9B706FCEA5508686E97F117 /* MMEAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FB14910EC1C2AFABE1DD5B5493F29FF /* MMEAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5357695FF0FE8A8DEFD88C76063D5721 /* MMEDependencyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1541D302C846DC382DC3703010BD5634 /* MMEDependencyManager.m */; };
+		58BDEECD1A4D0450AE3139F1AC116559 /* CLLocation+MMEMobileEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = A54A15539433383E7685C360BF43CF77 /* CLLocation+MMEMobileEvents.m */; };
+		5A0AD000CF4C4C870873C83642A1534D /* ssl_pin_verifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 040FFE5D00DD8F326DFCE2E699673AF1 /* ssl_pin_verifier.m */; };
+		6282BF3DA2396B4778C5284B8CA395EB /* MMETrustKitWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 55E1C6345E469768149B3D32D2AC20AA /* MMETrustKitWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6411B1A481EE2DB830DA5F0E0EC60461 /* parse_configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A56C814C90AF5694ECA6FA26522B3F /* parse_configuration.m */; };
+		668FE5F2B0A0E16F5E42CBAD464240D2 /* NSData+MMEGZIP.m in Sources */ = {isa = PBXBuildFile; fileRef = 81AA820A64EDAE234F87606F830DA82A /* NSData+MMEGZIP.m */; };
+		6DE5569FDDF598E911B3CAF7B8F8D292 /* TSKReportsRateLimiter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3BB06583F29D45F7C9F652DD61EBED /* TSKReportsRateLimiter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE59565F39263410D78E41AC7B3DF2D /* ssl_pin_verifier.h in Headers */ = {isa = PBXBuildFile; fileRef = CE87A6B88226C16903C10D5E7792A7FF /* ssl_pin_verifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		72763A4CCB84697AA5E26219712EF253 /* MapboxMobileEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F7CD1DEC5C9E6372AE86C4ED8855D9 /* MapboxMobileEvents.framework */; };
-		74AE893890D7187017B72A75CEED766F /* NSData+MMEGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = DF14E8CBD0AAAEB0EFD18CDBA5CF43DE /* NSData+MMEGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		75B464667259EEE28BA516CFE60175CA /* MMEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AB44A50407B23A185361891945ACF5F /* MMEConstants.m */; };
-		7890AC81FBFC9CFFDD156679F43D29BA /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BB91A38EFC3C8286821243C020A1E2 /* CGExtensions.swift */; };
-		7B8042EC4E27463D7CE9E434F1D9340C /* TSKLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 196D2ED68773769C9A2575DA5526229B /* TSKLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7CC8CA634E010CBE8C7948ECEAF1D55F /* MMEEventsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D2D4E0331F8A7F392DEE3E3C37E41B /* MMEEventsConfiguration.m */; };
-		8171A1F6878DA679441E445FF9FB9F47 /* TSKPinningValidatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 2243DD3EE94D6083D951C5FDBEEE7444 /* TSKPinningValidatorCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		81E62760E0A0A6B6743940F8BE685340 /* MMENSURLSessionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F56CCD77E7585C906AD873960F9783 /* MMENSURLSessionWrapper.m */; };
-		82143E9ADA796AF0C894D82E915FA96D /* MMENSDateWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC8464751F19621DA03F530952F3941 /* MMENSDateWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		83DEB1073AC1DA9C8F72D0CD8EEAAD41 /* TSKPinningValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BE4ED4944B4D0C362F6DB091BB30736 /* TSKPinningValidator.m */; };
-		84692AD3D370D9870D49868D4191DD70 /* TSKTrustKitConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 91DA447F007D5582097370C4701F497E /* TSKTrustKitConfig.m */; };
-		91AE8A001E0747C6D82174FAC9AF2737 /* MMEEventLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FC8049E195807DFB2B5F0BF008743EC /* MMEEventLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		922084AD6F030ED8D395610D9F31AFB1 /* MMEUIApplicationWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 66B1ADA0FC0D505C96AA2AE3889447A6 /* MMEUIApplicationWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9481EB53298464FDB10D01DF42D2D196 /* vendor_identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = B5DCF5F9C991547303757CAFD0AC7EA0 /* vendor_identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		948E8A5DC04F2BF5F7A42B42C1C8B12B /* MMEEventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6483633B8495EB5015672B3CE9A43102 /* MMEEventLogger.m */; };
-		993F3E94A3CA42E8D1BBEFE40A1FBCCD /* TSKBackgroundReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 323764E1550E58306D820644DAF9F432 /* TSKBackgroundReporter.m */; };
+		74AE893890D7187017B72A75CEED766F /* NSData+MMEGZIP.h in Headers */ = {isa = PBXBuildFile; fileRef = 821DBF0559FA9D72C34DD9B37E67DAD9 /* NSData+MMEGZIP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75B464667259EEE28BA516CFE60175CA /* MMEConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EC66E2B9CD6079CB24F50D1E482BB92 /* MMEConstants.m */; };
+		7890AC81FBFC9CFFDD156679F43D29BA /* CGExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9F2D20E899A2F3657F8879DE71B6FD /* CGExtensions.swift */; };
+		7B8042EC4E27463D7CE9E434F1D9340C /* TSKLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5534EC015DBD47E48E44E11B1F526B0E /* TSKLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CC8CA634E010CBE8C7948ECEAF1D55F /* MMEEventsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = B4B7102B0BC0F29D51587E82B1778187 /* MMEEventsConfiguration.m */; };
+		8171A1F6878DA679441E445FF9FB9F47 /* TSKPinningValidatorCallback.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A2C66FCD5C89543809FABC57752E3E2 /* TSKPinningValidatorCallback.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81E62760E0A0A6B6743940F8BE685340 /* MMENSURLSessionWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = F9BD254F2592D3DA388172F6BAF6B56F /* MMENSURLSessionWrapper.m */; };
+		82143E9ADA796AF0C894D82E915FA96D /* MMENSDateWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A48E09DC6846F9264AFCA1561C22E5 /* MMENSDateWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83DEB1073AC1DA9C8F72D0CD8EEAAD41 /* TSKPinningValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = AD8732F3193C7F0488B5BFE94CDF187C /* TSKPinningValidator.m */; };
+		84692AD3D370D9870D49868D4191DD70 /* TSKTrustKitConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E3AB29C2D19D55921ED8B7D0BD0EDE /* TSKTrustKitConfig.m */; };
+		91AE8A001E0747C6D82174FAC9AF2737 /* MMEEventLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1C07EB97E068ECF540E65928E62D83 /* MMEEventLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		922084AD6F030ED8D395610D9F31AFB1 /* MMEUIApplicationWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A444CEC3D1D49717E7E29A3710C48C5 /* MMEUIApplicationWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9481EB53298464FDB10D01DF42D2D196 /* vendor_identifier.h in Headers */ = {isa = PBXBuildFile; fileRef = D90C9707EAF7AE8A39E3325BC48BC5BC /* vendor_identifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		948E8A5DC04F2BF5F7A42B42C1C8B12B /* MMEEventLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 735E12E9E0E12A0CCF7CC764230EA541 /* MMEEventLogger.m */; };
+		993F3E94A3CA42E8D1BBEFE40A1FBCCD /* TSKBackgroundReporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EFC3F25ECBC72616D0D6697A8C3EEC /* TSKBackgroundReporter.m */; };
 		99D937345CC1C226E823D3DD65DC41DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8370B5FF2C843D09D5E19F1CED9308 /* Foundation.framework */; };
-		9A18BC13BE9F17EFB8158DC5C83724E6 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C396E0B35060793F54CC48A13776AC2D /* SCNExtensions.swift */; };
-		9BAA33E04DD2FF3CE04CA7B8B1BB6AF0 /* reporting_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EA85D9D7844DAD7CD36161E784FD1EE /* reporting_utils.m */; };
-		9D3A30F2CBE6D9BA6F0612F027E6C8D5 /* MMEUINavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = E70AE3DBD2650FCA9816348D08D9F963 /* MMEUINavigation.m */; };
-		9F5B08A2F50360C5950C67F1B658CD57 /* MMEEventsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FD079FFE426DF4AF61ACE7AFF71FA2 /* MMEEventsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A16B62939502DDB2D6F88D7EB3612794 /* logger.html in Resources */ = {isa = PBXBuildFile; fileRef = B2E1DC4DFF1372F6F953D84CCDB4DDD0 /* logger.html */; };
-		A2C64957A62F9D9832D72F8CB5F39AFA /* MMEEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 888299B2F6BC4BAC0D135E0C68792186 /* MMEEvent.m */; };
-		A35B75300FD2AC6410CD110A5154E56A /* MMEEventsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC82DB16B3CF8219B12ED215B858F7E /* MMEEventsService.m */; };
-		A90F49A1BFA082C87C6E9D57DB7ED6A7 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4788DB15A0D83C814C2BF5AE5AAB5665 /* Math.swift */; };
-		AE7D0CC302963BC6F81F6ADBB003BF61 /* MMECommonEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84342AA8E9719F11378C70066701C7BB /* MMECommonEventData.m */; };
-		B0976EAFD86A55CBB5A4A0EE1185C586 /* HTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57263E13A0BFF876C64A115A53BF591 /* HTTPRequestOperation.swift */; };
-		B0F8CA4FA727DD87A99CA351CD9421C7 /* MMELocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB89B657EFFAAA22B19604943AAADB /* MMELocationManager.m */; };
-		B1C7F5EEC781441151F085A571CEDCB9 /* MMEEventsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F3BE74B1D67B0EE08C082971E5661CC /* MMEEventsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B59CEEB708464ABEC69754603BE76324 /* TrustKit.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C5BC6B78564DE9F8EB4B0C0FF0707D /* TrustKit.m */; };
-		B870AFE904CE20C70D36244B97BC467E /* MMETimerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D47127C6F78247789B88B3693B448FF /* MMETimerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BEB65819F175303981CFC65052228BB4 /* MMEUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = F9536F0B5AB3EFADB38EFACA875B61BC /* MMEUniqueIdentifier.m */; };
-		C0A8528C9A47A462A949E2FD86E00777 /* MapboxMobileEvents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B3EA2EFE313DAF2D0C5B478509404F1 /* MapboxMobileEvents-dummy.m */; };
-		C14928ACE8DEF878A38857CB9EC3BDD0 /* TSKReportsRateLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 796ED0023FA7A43CC6C25ADDC08ADC0E /* TSKReportsRateLimiter.m */; };
-		C80596971D9ED2CF1BF248EC431BF108 /* TSKPinningValidatorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 499E9CA836234EEE818AAED732FF5E74 /* TSKPinningValidatorResult.m */; };
-		CD632F0FCD9E7F9C6F1658E7D5396CE4 /* MMEAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 36587975E612EC0758914CEFADFFEF8C /* MMEAPIClient.m */; };
-		D1E7B295C8E6D1D25D9F141EBD144587 /* MMEUIApplicationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 280F6310C8BDAF143E1611360EA3D150 /* MMEUIApplicationWrapper.m */; };
-		DAF4F24FB63A02D97F0597209E3D6BE0 /* MMEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F796644808974AC224D41DB88D4E0115 /* MMEReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCAB45A85BDB3CA4B3E9C74A49063A43 /* MMEUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C4E297EC3CD323C24D72219D63DAC60 /* MMEUniqueIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCFD0DA77112C26974E38972D09816B1 /* MMECategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DD0BBAB99EB19CB364A238D3F9E5B7E /* MMECategoryLoader.m */; };
-		DD1F9C35A463C6A949868DEED6E0C00B /* configuration_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C1CF0267DB750BE8F9FFC3EF111F03 /* configuration_utils.m */; };
-		E15D1D2DFA03F94DEDF8085F1FAD458B /* MMENSDateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A7C81F33A328E73823DEC0C3209E5D /* MMENSDateWrapper.m */; };
-		E41D27C34908E4C4762E720A9079F692 /* MMEReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 489C0AB447EA7337EFBCBEB580E7097F /* MMEReachability.m */; };
+		9A18BC13BE9F17EFB8158DC5C83724E6 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F381BBEE07A886D9A7652B1C949A8A7 /* SCNExtensions.swift */; };
+		9BAA33E04DD2FF3CE04CA7B8B1BB6AF0 /* reporting_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5AF8A0EB21154656A0C7E9938467AD /* reporting_utils.m */; };
+		9D3A30F2CBE6D9BA6F0612F027E6C8D5 /* MMEUINavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDAD44F75785FC6FF8DCF03F023F7E /* MMEUINavigation.m */; };
+		9F5B08A2F50360C5950C67F1B658CD57 /* MMEEventsConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FD0F133E04CD6D627D34D3D439E6399 /* MMEEventsConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16B62939502DDB2D6F88D7EB3612794 /* logger.html in Resources */ = {isa = PBXBuildFile; fileRef = 11BB5D38F8AD7B9A8DF6163C2D2204FC /* logger.html */; };
+		A2C64957A62F9D9832D72F8CB5F39AFA /* MMEEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 511ED282F8FE4002672453851FB857A2 /* MMEEvent.m */; };
+		A35B75300FD2AC6410CD110A5154E56A /* MMEEventsService.m in Sources */ = {isa = PBXBuildFile; fileRef = F402DC90FE24F108C06DC008DCA90188 /* MMEEventsService.m */; };
+		A90F49A1BFA082C87C6E9D57DB7ED6A7 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5AE6AD1607D8350ED6FF2DFBCAFDE2 /* Math.swift */; };
+		AE7D0CC302963BC6F81F6ADBB003BF61 /* MMECommonEventData.m in Sources */ = {isa = PBXBuildFile; fileRef = C066B3A09E7FF8593C63A2F7545D6976 /* MMECommonEventData.m */; };
+		B0976EAFD86A55CBB5A4A0EE1185C586 /* HTTPRequestOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDC82C17E55C00DFCB1ED0EBBAB5892 /* HTTPRequestOperation.swift */; };
+		B0F8CA4FA727DD87A99CA351CD9421C7 /* MMELocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 39AC00339A630741F681BBDEE29F7638 /* MMELocationManager.m */; };
+		B1C7F5EEC781441151F085A571CEDCB9 /* MMEEventsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A6F30724E62F29AB97688364C47B0A /* MMEEventsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B59CEEB708464ABEC69754603BE76324 /* TrustKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8400D430AA3883E33B686D879A8C78E4 /* TrustKit.m */; };
+		B870AFE904CE20C70D36244B97BC467E /* MMETimerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CCD634490C81C40F637F82173AEACBB /* MMETimerManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB65819F175303981CFC65052228BB4 /* MMEUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7A2506EE4192CCBC9F6DA399CB0028 /* MMEUniqueIdentifier.m */; };
+		C0A8528C9A47A462A949E2FD86E00777 /* MapboxMobileEvents-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 504FF8C6DE296BB6B9A5ECA4D111CC91 /* MapboxMobileEvents-dummy.m */; };
+		C14928ACE8DEF878A38857CB9EC3BDD0 /* TSKReportsRateLimiter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42468DE14CB2BCFD25F54FA05800DD8F /* TSKReportsRateLimiter.m */; };
+		C80596971D9ED2CF1BF248EC431BF108 /* TSKPinningValidatorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = D56667B65E96D291F80BB38B7F74958C /* TSKPinningValidatorResult.m */; };
+		CD632F0FCD9E7F9C6F1658E7D5396CE4 /* MMEAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 39F8BC26EECACDBC9113EF880A3CFC14 /* MMEAPIClient.m */; };
+		D1E7B295C8E6D1D25D9F141EBD144587 /* MMEUIApplicationWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AFCBF734EFCCB2C43A8C1032F200E15 /* MMEUIApplicationWrapper.m */; };
+		DAF4F24FB63A02D97F0597209E3D6BE0 /* MMEReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 561906034A29524F16A2AE1D342776D8 /* MMEReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAB45A85BDB3CA4B3E9C74A49063A43 /* MMEUniqueIdentifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F509E506076F083607DF2F89A7E7DB9 /* MMEUniqueIdentifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCFD0DA77112C26974E38972D09816B1 /* MMECategoryLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 024CC825A58E1C25C2AD496A559F11F3 /* MMECategoryLoader.m */; };
+		DD1F9C35A463C6A949868DEED6E0C00B /* configuration_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A70A7C86E75A0A27DB705718F1651C8 /* configuration_utils.m */; };
+		E15D1D2DFA03F94DEDF8085F1FAD458B /* MMENSDateWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 72195E6D2FE577C289FBCA6C1E7F87A9 /* MMENSDateWrapper.m */; };
+		E41D27C34908E4C4762E720A9079F692 /* MMEReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5462AE4E548BA9D222156E73A5644096 /* MMEReachability.m */; };
 		EB5FEA80688C33268DC2BBEDD5028EB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8370B5FF2C843D09D5E19F1CED9308 /* Foundation.framework */; };
 		EC0470F936E9DB16354E2F3CBBBA3C9F /* Pods-MapboxCELADemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F88169E42040ADB60130B1B0F18B495E /* Pods-MapboxCELADemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ED7E864B01EE02AE117F647468DB67E2 /* MMEEventLogReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A208D91881684F4900C78B3CE68CEA88 /* MMEEventLogReportViewController.m */; };
-		F3D38AC6A09DAB1E746C85BCF0406933 /* MapboxMobileEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BA892D3236CD7E87E7A807F3A2276BC /* MapboxMobileEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5444B9ED3BCB0740DFDDEAD3F512645 /* MapboxImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C42BBC1D21EA35A8B50EA05FF7D4D32 /* MapboxImageAPI.swift */; };
-		F6D26B9A96C8DC56323E20DBE73F7249 /* TSKPinningValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 34100E45E3AF0E6BD3394D9814C441B8 /* TSKPinningValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F867916D583C1B28D588EDC311B231F5 /* configuration_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 64625294591A9AB93B30552102A248A1 /* configuration_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8FC88F8261EEB866C658D54A6D48E62 /* MMEUINavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4F6E3DA99AAD179A0E61E3B71EC63D /* MMEUINavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED7E864B01EE02AE117F647468DB67E2 /* MMEEventLogReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C285308BEE6C221640428A0724C4DD2F /* MMEEventLogReportViewController.m */; };
+		F3D38AC6A09DAB1E746C85BCF0406933 /* MapboxMobileEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = F186E13E4BF7BF0CA1CC33E824CBBC4D /* MapboxMobileEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5444B9ED3BCB0740DFDDEAD3F512645 /* MapboxImageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6DF217288ED5A4F175124DB4BF4480 /* MapboxImageAPI.swift */; };
+		F6D26B9A96C8DC56323E20DBE73F7249 /* TSKPinningValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = B367EF25F8F07CAB2E3ADF6090AD8809 /* TSKPinningValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F867916D583C1B28D588EDC311B231F5 /* configuration_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 5743F04919B308C2BBD9E61F57DE078E /* configuration_utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8FC88F8261EEB866C658D54A6D48E62 /* MMEUINavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 68642FDB2E3EB079AEE382B392FC2F65 /* MMEUINavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB187F08AB949DA956D287117C55932C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8370B5FF2C843D09D5E19F1CED9308 /* Foundation.framework */; };
-		FE615F07310FD17076A5C8F719977821 /* TSKBackgroundReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 9151C695849FC12E21D7FABB1A52A115 /* TSKBackgroundReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF503627D43907B941F299B902598E36 /* MMECommonEventData.h in Headers */ = {isa = PBXBuildFile; fileRef = 445BCDB4108C783B042198D0D39C1281 /* MMECommonEventData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE615F07310FD17076A5C8F719977821 /* TSKBackgroundReporter.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B8C789A0F3F1C778508AACD4245C27 /* TSKBackgroundReporter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF503627D43907B941F299B902598E36 /* MMECommonEventData.h in Headers */ = {isa = PBXBuildFile; fileRef = F73303C75DDC4625A80075D60E55A2F7 /* MMECommonEventData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,122 +132,125 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01529CEF305B8E04C0E780E55F048E93 /* MapboxHTTPAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxHTTPAPI.swift; path = "MapboxSceneKit/Tile Fetching/MapboxHTTPAPI.swift"; sourceTree = "<group>"; };
+		024CC825A58E1C25C2AD496A559F11F3 /* MMECategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECategoryLoader.m; path = MapboxMobileEvents/MMECategoryLoader.m; sourceTree = "<group>"; };
 		028D61681AEF2164029084851FB248F8 /* Pods_MapboxCELADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MapboxCELADemo.framework; path = "Pods-MapboxCELADemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		038358779F2FE60893D7DC8D372918CA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040FFE5D00DD8F326DFCE2E699673AF1 /* ssl_pin_verifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ssl_pin_verifier.m; path = vendor/TrustKit/Pinning/ssl_pin_verifier.m; sourceTree = "<group>"; };
+		0468B21911ECDB4E272C9F9C2650AC02 /* TSKTrustKitConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKTrustKitConfig.h; path = vendor/TrustKit/TSKTrustKitConfig.h; sourceTree = "<group>"; };
+		0892B4BD997032D2B584A36C0B3B3CCC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A8370B5FF2C843D09D5E19F1CED9308 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		0AB44A50407B23A185361891945ACF5F /* MMEConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEConstants.m; path = MapboxMobileEvents/MMEConstants.m; sourceTree = "<group>"; };
-		0BA892D3236CD7E87E7A807F3A2276BC /* MapboxMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxMobileEvents.h; path = MapboxMobileEvents/MapboxMobileEvents.h; sourceTree = "<group>"; };
-		0DF21345B7D505EFB00FDAB7966DA015 /* MMEEventLogReportViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogReportViewController.h; path = MapboxMobileEvents/MMEEventLogReportViewController.h; sourceTree = "<group>"; };
-		0F385DDBCD80F0A220DC84100304987F /* MMEEventsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsService.h; path = MapboxMobileEvents/MMEEventsService.h; sourceTree = "<group>"; };
-		1815DA7DF04844ED43FC881B38243A6F /* MapboxSceneKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxSceneKit-dummy.m"; sourceTree = "<group>"; };
-		196D2ED68773769C9A2575DA5526229B /* TSKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKLog.h; path = vendor/TrustKit/TSKLog.h; sourceTree = "<group>"; };
-		19A7C81F33A328E73823DEC0C3209E5D /* MMENSDateWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMENSDateWrapper.m; path = MapboxMobileEvents/MMENSDateWrapper.m; sourceTree = "<group>"; };
-		1E6E95782C6D80755843840B4EB02B5E /* TSKPinFailureReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinFailureReport.h; path = vendor/TrustKit/Reporting/TSKPinFailureReport.h; sourceTree = "<group>"; };
-		2069081E95FBD74336EE0B574C3EEB43 /* MMEEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEvent.h; path = MapboxMobileEvents/MMEEvent.h; sourceTree = "<group>"; };
-		21DCB145616AC2FA58BE32CB4EDF11BE /* MMEConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEConstants.h; path = MapboxMobileEvents/MMEConstants.h; sourceTree = "<group>"; };
-		2243DD3EE94D6083D951C5FDBEEE7444 /* TSKPinningValidatorCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidatorCallback.h; path = vendor/TrustKit/TSKPinningValidatorCallback.h; sourceTree = "<group>"; };
-		280F6310C8BDAF143E1611360EA3D150 /* MMEUIApplicationWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUIApplicationWrapper.m; path = MapboxMobileEvents/MMEUIApplicationWrapper.m; sourceTree = "<group>"; };
+		0C3BB06583F29D45F7C9F652DD61EBED /* TSKReportsRateLimiter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKReportsRateLimiter.h; path = vendor/TrustKit/Reporting/TSKReportsRateLimiter.h; sourceTree = "<group>"; };
+		1033A73C21AF824224E9EE2032FD42DE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11BB5D38F8AD7B9A8DF6163C2D2204FC /* logger.html */ = {isa = PBXFileReference; includeInIndex = 1; name = logger.html; path = MapboxMobileEvents/Resources/logger.html; sourceTree = "<group>"; };
+		1541D302C846DC382DC3703010BD5634 /* MMEDependencyManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEDependencyManager.m; path = MapboxMobileEvents/MMEDependencyManager.m; sourceTree = "<group>"; };
+		17B8C789A0F3F1C778508AACD4245C27 /* TSKBackgroundReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKBackgroundReporter.h; path = vendor/TrustKit/Reporting/TSKBackgroundReporter.h; sourceTree = "<group>"; };
+		18A56C814C90AF5694ECA6FA26522B3F /* parse_configuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = parse_configuration.m; path = vendor/TrustKit/parse_configuration.m; sourceTree = "<group>"; };
+		1FE9B4CFEA1D27CD618EAD90985A45C7 /* TrustKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TrustKit.h; path = vendor/TrustKit/TrustKit.h; sourceTree = "<group>"; };
+		227400A5A8F256BA19373F836A873AAB /* MMEEventLogReportViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogReportViewController.h; path = MapboxMobileEvents/MMEEventLogReportViewController.h; sourceTree = "<group>"; };
+		2610919C108F71C42AFE2448C7D47139 /* TSKPublicKeyAlgorithm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPublicKeyAlgorithm.h; path = vendor/TrustKit/Pinning/TSKPublicKeyAlgorithm.h; sourceTree = "<group>"; };
+		298E32D2472814DEE20E94E782B536CE /* MapboxSceneKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxSceneKit-dummy.m"; sourceTree = "<group>"; };
+		2A42DB6C9F471C8F7744646C16E2CE9F /* MMEConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEConstants.h; path = MapboxMobileEvents/MMEConstants.h; sourceTree = "<group>"; };
 		2C12E3A8C895E95A5DBC1D15642BCE84 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxMobileEvents.framework; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C4E297EC3CD323C24D72219D63DAC60 /* MMEUniqueIdentifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUniqueIdentifier.h; path = MapboxMobileEvents/MMEUniqueIdentifier.h; sourceTree = "<group>"; };
-		2CCD654ECC642BED3B7195F194E62D98 /* TrustKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TrustKit.h; path = vendor/TrustKit/TrustKit.h; sourceTree = "<group>"; };
-		2CD088E20D7938137CA7070170BABDB9 /* CLLocation+MMEMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocation+MMEMobileEvents.h"; path = "MapboxMobileEvents/CLLocation+MMEMobileEvents.h"; sourceTree = "<group>"; };
-		2DD0BBAB99EB19CB364A238D3F9E5B7E /* MMECategoryLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECategoryLoader.m; path = MapboxMobileEvents/MMECategoryLoader.m; sourceTree = "<group>"; };
-		323764E1550E58306D820644DAF9F432 /* TSKBackgroundReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKBackgroundReporter.m; path = vendor/TrustKit/Reporting/TSKBackgroundReporter.m; sourceTree = "<group>"; };
-		34100E45E3AF0E6BD3394D9814C441B8 /* TSKPinningValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidator.h; path = vendor/TrustKit/TSKPinningValidator.h; sourceTree = "<group>"; };
-		3572ED24DEF5AB1E03689F52672C73E9 /* MMEAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEAPIClient.h; path = MapboxMobileEvents/MMEAPIClient.h; sourceTree = "<group>"; };
-		36587975E612EC0758914CEFADFFEF8C /* MMEAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEAPIClient.m; path = MapboxMobileEvents/MMEAPIClient.m; sourceTree = "<group>"; };
-		379C2167DA0210EEAD91FFA8A5F7AF06 /* MMECategoryLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECategoryLoader.h; path = MapboxMobileEvents/MMECategoryLoader.h; sourceTree = "<group>"; };
-		3A4DAC847C97F22EB96331BAF63407A1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A8AFB113BECB0008EA7A992F8E19CF0 /* parse_configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parse_configuration.h; path = vendor/TrustKit/parse_configuration.h; sourceTree = "<group>"; };
-		3AC82DB16B3CF8219B12ED215B858F7E /* MMEEventsService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsService.m; path = MapboxMobileEvents/MMEEventsService.m; sourceTree = "<group>"; };
-		3B3EA2EFE313DAF2D0C5B478509404F1 /* MapboxMobileEvents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxMobileEvents-dummy.m"; sourceTree = "<group>"; };
-		3D47127C6F78247789B88B3693B448FF /* MMETimerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETimerManager.h; path = MapboxMobileEvents/MMETimerManager.h; sourceTree = "<group>"; };
-		3EA85D9D7844DAD7CD36161E784FD1EE /* reporting_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = reporting_utils.m; path = vendor/TrustKit/Reporting/reporting_utils.m; sourceTree = "<group>"; };
-		445BCDB4108C783B042198D0D39C1281 /* MMECommonEventData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECommonEventData.h; path = MapboxMobileEvents/MMECommonEventData.h; sourceTree = "<group>"; };
-		451EB4B5882488ACB1603D0FA57CC566 /* TSKPublicKeyAlgorithm.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPublicKeyAlgorithm.h; path = vendor/TrustKit/Pinning/TSKPublicKeyAlgorithm.h; sourceTree = "<group>"; };
-		4788DB15A0D83C814C2BF5AE5AAB5665 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = MapboxSceneKit/Math.swift; sourceTree = "<group>"; };
-		489C0AB447EA7337EFBCBEB580E7097F /* MMEReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEReachability.m; path = MapboxMobileEvents/Reachability/MMEReachability.m; sourceTree = "<group>"; };
-		48DFA927C9C8794E9AE81F8D46B8C5EA /* MapboxMobileEvents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxMobileEvents-umbrella.h"; sourceTree = "<group>"; };
-		499E9CA836234EEE818AAED732FF5E74 /* TSKPinningValidatorResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinningValidatorResult.m; path = vendor/TrustKit/TSKPinningValidatorResult.m; sourceTree = "<group>"; };
-		4BE4ED4944B4D0C362F6DB091BB30736 /* TSKPinningValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinningValidator.m; path = vendor/TrustKit/TSKPinningValidator.m; sourceTree = "<group>"; };
-		4F65732E774B18BAB89524907A60B5D5 /* MapboxMobileEvents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxMobileEvents.xcconfig; sourceTree = "<group>"; };
+		2CCD634490C81C40F637F82173AEACBB /* MMETimerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETimerManager.h; path = MapboxMobileEvents/MMETimerManager.h; sourceTree = "<group>"; };
+		2D92F7B30E0ADF34A63F38FE7997A365 /* MMEEventsService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsService.h; path = MapboxMobileEvents/MMEEventsService.h; sourceTree = "<group>"; };
+		2FD0F133E04CD6D627D34D3D439E6399 /* MMEEventsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsConfiguration.h; path = MapboxMobileEvents/MMEEventsConfiguration.h; sourceTree = "<group>"; };
+		34CD504DE1245A62B8FF02E5046EC2BE /* MapboxHTTPAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxHTTPAPI.swift; path = "MapboxSceneKit/Tile Fetching/MapboxHTTPAPI.swift"; sourceTree = "<group>"; };
+		39AC00339A630741F681BBDEE29F7638 /* MMELocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMELocationManager.m; path = MapboxMobileEvents/MMELocationManager.m; sourceTree = "<group>"; };
+		39F8BC26EECACDBC9113EF880A3CFC14 /* MMEAPIClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEAPIClient.m; path = MapboxMobileEvents/MMEAPIClient.m; sourceTree = "<group>"; };
+		39F9041DB1C43102C0565A0510826F81 /* MapboxSceneKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxSceneKit-umbrella.h"; sourceTree = "<group>"; };
+		3F509E506076F083607DF2F89A7E7DB9 /* MMEUniqueIdentifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUniqueIdentifier.h; path = MapboxMobileEvents/MMEUniqueIdentifier.h; sourceTree = "<group>"; };
+		42468DE14CB2BCFD25F54FA05800DD8F /* TSKReportsRateLimiter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKReportsRateLimiter.m; path = vendor/TrustKit/Reporting/TSKReportsRateLimiter.m; sourceTree = "<group>"; };
+		44D915B3BA06F5543BEB275CE1419544 /* vendor_identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = vendor_identifier.m; path = vendor/TrustKit/Reporting/vendor_identifier.m; sourceTree = "<group>"; };
+		4BC8E8BA53971F91D16238C37872C6BC /* TSKPinningValidatorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidatorResult.h; path = vendor/TrustKit/TSKPinningValidatorResult.h; sourceTree = "<group>"; };
+		4DCB1F4510224425D7232E69DC0F6C84 /* MapboxSceneKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxSceneKit.modulemap; sourceTree = "<group>"; };
+		504FF8C6DE296BB6B9A5ECA4D111CC91 /* MapboxMobileEvents-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MapboxMobileEvents-dummy.m"; sourceTree = "<group>"; };
+		511ED282F8FE4002672453851FB857A2 /* MMEEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEvent.m; path = MapboxMobileEvents/MMEEvent.m; sourceTree = "<group>"; };
+		512A02F52C1F2D3AF0D3D46B9B9D48AA /* TSKPinningValidator_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidator_Private.h; path = vendor/TrustKit/TSKPinningValidator_Private.h; sourceTree = "<group>"; };
+		5462AE4E548BA9D222156E73A5644096 /* MMEReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEReachability.m; path = MapboxMobileEvents/Reachability/MMEReachability.m; sourceTree = "<group>"; };
 		5483682B2961C65643BB8A78EB2CF2A0 /* MapboxSceneKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MapboxSceneKit.framework; path = MapboxSceneKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55460B89050F3118428F0A2039E9973E /* AsyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncOperation.swift; path = "MapboxSceneKit/Tile Fetching/AsyncOperation.swift"; sourceTree = "<group>"; };
-		5BB86458EFCEBF6792AE804FA09B97C7 /* MapboxSceneKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxSceneKit.modulemap; sourceTree = "<group>"; };
+		54AB1A05B24580D99DACA8A03DD3FF70 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		5534EC015DBD47E48E44E11B1F526B0E /* TSKLog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKLog.h; path = vendor/TrustKit/TSKLog.h; sourceTree = "<group>"; };
+		55E1C6345E469768149B3D32D2AC20AA /* MMETrustKitWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETrustKitWrapper.h; path = MapboxMobileEvents/MMETrustKitWrapper.h; sourceTree = "<group>"; };
+		561906034A29524F16A2AE1D342776D8 /* MMEReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEReachability.h; path = MapboxMobileEvents/Reachability/MMEReachability.h; sourceTree = "<group>"; };
+		5743F04919B308C2BBD9E61F57DE078E /* configuration_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = configuration_utils.h; path = vendor/TrustKit/configuration_utils.h; sourceTree = "<group>"; };
+		5A2D87B0C5EE00956E91F6A20A8D2C84 /* TSKPinFailureReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinFailureReport.m; path = vendor/TrustKit/Reporting/TSKPinFailureReport.m; sourceTree = "<group>"; };
+		5A444CEC3D1D49717E7E29A3710C48C5 /* MMEUIApplicationWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUIApplicationWrapper.h; path = MapboxMobileEvents/MMEUIApplicationWrapper.h; sourceTree = "<group>"; };
+		5AFCBF734EFCCB2C43A8C1032F200E15 /* MMEUIApplicationWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUIApplicationWrapper.m; path = MapboxMobileEvents/MMEUIApplicationWrapper.m; sourceTree = "<group>"; };
+		5BE8E8FDF7483442263C3C8DAA4AC57F /* MMEEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEvent.h; path = MapboxMobileEvents/MMEEvent.h; sourceTree = "<group>"; };
+		5DC0B7AE97EE5CD4589DEF4705F86874 /* AsyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncOperation.swift; path = "MapboxSceneKit/Tile Fetching/AsyncOperation.swift"; sourceTree = "<group>"; };
 		5DC478839CB7736A52169A6D581C898F /* Pods-MapboxCELADemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MapboxCELADemo.modulemap"; sourceTree = "<group>"; };
-		60C1CF0267DB750BE8F9FFC3EF111F03 /* configuration_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = configuration_utils.m; path = vendor/TrustKit/configuration_utils.m; sourceTree = "<group>"; };
-		621E38A83E34A7B5F47F7CC9EE44E276 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64625294591A9AB93B30552102A248A1 /* configuration_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = configuration_utils.h; path = vendor/TrustKit/configuration_utils.h; sourceTree = "<group>"; };
-		6483633B8495EB5015672B3CE9A43102 /* MMEEventLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventLogger.m; path = MapboxMobileEvents/MMEEventLogger.m; sourceTree = "<group>"; };
-		66B1ADA0FC0D505C96AA2AE3889447A6 /* MMEUIApplicationWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUIApplicationWrapper.h; path = MapboxMobileEvents/MMEUIApplicationWrapper.h; sourceTree = "<group>"; };
-		66BB91A38EFC3C8286821243C020A1E2 /* CGExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGExtensions.swift; path = MapboxSceneKit/Extensions/CGExtensions.swift; sourceTree = "<group>"; };
-		6EA2F0260BB3F7568E868FCF4BFF4577 /* TSKTrustKitConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKTrustKitConfig.h; path = vendor/TrustKit/TSKTrustKitConfig.h; sourceTree = "<group>"; };
+		5EC66E2B9CD6079CB24F50D1E482BB92 /* MMEConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEConstants.m; path = MapboxMobileEvents/MMEConstants.m; sourceTree = "<group>"; };
+		65E3AB29C2D19D55921ED8B7D0BD0EDE /* TSKTrustKitConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKTrustKitConfig.m; path = vendor/TrustKit/TSKTrustKitConfig.m; sourceTree = "<group>"; };
+		68642FDB2E3EB079AEE382B392FC2F65 /* MMEUINavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUINavigation.h; path = MapboxMobileEvents/MMEUINavigation.h; sourceTree = "<group>"; };
+		6A5AF8A0EB21154656A0C7E9938467AD /* reporting_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = reporting_utils.m; path = vendor/TrustKit/Reporting/reporting_utils.m; sourceTree = "<group>"; };
+		6A76548FB9C19683FA829C113A048FBC /* MMELocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMELocationManager.h; path = MapboxMobileEvents/MMELocationManager.h; sourceTree = "<group>"; };
+		6B1C07EB97E068ECF540E65928E62D83 /* MMEEventLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogger.h; path = MapboxMobileEvents/MMEEventLogger.h; sourceTree = "<group>"; };
+		6DA4CE2DC90B9CD15734E7AE82FFD465 /* MMENSURLSessionWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMENSURLSessionWrapper.h; path = MapboxMobileEvents/MMENSURLSessionWrapper.h; sourceTree = "<group>"; };
 		6F795CF0841F113C19CC8A3057E12F86 /* Pods-MapboxCELADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxCELADemo.release.xcconfig"; sourceTree = "<group>"; };
-		6FC8049E195807DFB2B5F0BF008743EC /* MMEEventLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventLogger.h; path = MapboxMobileEvents/MMEEventLogger.h; sourceTree = "<group>"; };
-		6FE87D440DBBE6DC9FB5B7619972786E /* MMETypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETypes.m; path = MapboxMobileEvents/MMETypes.m; sourceTree = "<group>"; };
 		70C0C992B7659C90107A1879D2710210 /* Pods-MapboxCELADemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapboxCELADemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7521887BF0734D8073F1C91E962F0BB7 /* MMEDependencyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEDependencyManager.h; path = MapboxMobileEvents/MMEDependencyManager.h; sourceTree = "<group>"; };
-		76ED120DC74D3393A0782C0458704658 /* TSKPinFailureReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinFailureReport.m; path = vendor/TrustKit/Reporting/TSKPinFailureReport.m; sourceTree = "<group>"; };
-		7901C79E522900E86F267977D240BDCC /* MMETimerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETimerManager.m; path = MapboxMobileEvents/MMETimerManager.m; sourceTree = "<group>"; };
-		796ED0023FA7A43CC6C25ADDC08ADC0E /* TSKReportsRateLimiter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKReportsRateLimiter.m; path = vendor/TrustKit/Reporting/TSKReportsRateLimiter.m; sourceTree = "<group>"; };
-		79A41073BE0895F62B4640BFCCE8D23A /* MapboxSceneKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxSceneKit-umbrella.h"; sourceTree = "<group>"; };
-		7C42BBC1D21EA35A8B50EA05FF7D4D32 /* MapboxImageAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxImageAPI.swift; path = MapboxSceneKit/MapboxImageAPI.swift; sourceTree = "<group>"; };
-		7E2F34686D47F429954F0CCB4E9020D4 /* MMELocationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMELocationManager.h; path = MapboxMobileEvents/MMELocationManager.h; sourceTree = "<group>"; };
+		716587C9715F0C7F1DA16965638A2A3B /* MMETypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETypes.h; path = MapboxMobileEvents/MMETypes.h; sourceTree = "<group>"; };
+		72195E6D2FE577C289FBCA6C1E7F87A9 /* MMENSDateWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMENSDateWrapper.m; path = MapboxMobileEvents/MMENSDateWrapper.m; sourceTree = "<group>"; };
+		72659A773D0C524AA0512421510CCB7B /* reporting_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = reporting_utils.h; path = vendor/TrustKit/Reporting/reporting_utils.h; sourceTree = "<group>"; };
+		735E12E9E0E12A0CCF7CC764230EA541 /* MMEEventLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventLogger.m; path = MapboxMobileEvents/MMEEventLogger.m; sourceTree = "<group>"; };
+		77EFC3F25ECBC72616D0D6697A8C3EEC /* TSKBackgroundReporter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKBackgroundReporter.m; path = vendor/TrustKit/Reporting/TSKBackgroundReporter.m; sourceTree = "<group>"; };
+		7A2C66FCD5C89543809FABC57752E3E2 /* TSKPinningValidatorCallback.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidatorCallback.h; path = vendor/TrustKit/TSKPinningValidatorCallback.h; sourceTree = "<group>"; };
 		8027DB1164954F651867B375A23B7CD0 /* Pods-MapboxCELADemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapboxCELADemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		8162C3659DDDC83866BF7173B653BED4 /* TSKPinningValidatorResult.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidatorResult.h; path = vendor/TrustKit/TSKPinningValidatorResult.h; sourceTree = "<group>"; };
+		81AA820A64EDAE234F87606F830DA82A /* NSData+MMEGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MMEGZIP.m"; path = "MapboxMobileEvents/NSData+MMEGZIP.m"; sourceTree = "<group>"; };
+		81C97139F94AB2D2AEAB3E2557AEC314 /* TSKSPKIHashCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKSPKIHashCache.h; path = vendor/TrustKit/Pinning/TSKSPKIHashCache.h; sourceTree = "<group>"; };
+		821DBF0559FA9D72C34DD9B37E67DAD9 /* NSData+MMEGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MMEGZIP.h"; path = "MapboxMobileEvents/NSData+MMEGZIP.h"; sourceTree = "<group>"; };
 		831743106C484E01D696F4513AFEEEA5 /* Pods-MapboxCELADemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxCELADemo-frameworks.sh"; sourceTree = "<group>"; };
-		83A9F2FC0A53EDCCF05D1CA5A01E0B17 /* MMETrustKitWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETrustKitWrapper.m; path = MapboxMobileEvents/MMETrustKitWrapper.m; sourceTree = "<group>"; };
-		84342AA8E9719F11378C70066701C7BB /* MMECommonEventData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECommonEventData.m; path = MapboxMobileEvents/MMECommonEventData.m; sourceTree = "<group>"; };
-		888299B2F6BC4BAC0D135E0C68792186 /* MMEEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEvent.m; path = MapboxMobileEvents/MMEEvent.m; sourceTree = "<group>"; };
-		8F3BE74B1D67B0EE08C082971E5661CC /* MMEEventsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsManager.h; path = MapboxMobileEvents/MMEEventsManager.h; sourceTree = "<group>"; };
-		90AB561C11A5C7E4C560130973444040 /* TerrainNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TerrainNode.swift; path = MapboxSceneKit/TerrainNode.swift; sourceTree = "<group>"; };
-		9151C695849FC12E21D7FABB1A52A115 /* TSKBackgroundReporter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKBackgroundReporter.h; path = vendor/TrustKit/Reporting/TSKBackgroundReporter.h; sourceTree = "<group>"; };
-		91DA447F007D5582097370C4701F497E /* TSKTrustKitConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKTrustKitConfig.m; path = vendor/TrustKit/TSKTrustKitConfig.m; sourceTree = "<group>"; };
+		8400D430AA3883E33B686D879A8C78E4 /* TrustKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TrustKit.m; path = vendor/TrustKit/TrustKit.m; sourceTree = "<group>"; };
+		8465274F33166F7BF5FA527E92A6978C /* MapboxMobileEvents-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxMobileEvents-umbrella.h"; sourceTree = "<group>"; };
+		88E6B4F9B559C916BE975D86F0952871 /* MapboxMobileEvents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxMobileEvents-prefix.pch"; sourceTree = "<group>"; };
+		8A70A7C86E75A0A27DB705718F1651C8 /* configuration_utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = configuration_utils.m; path = vendor/TrustKit/configuration_utils.m; sourceTree = "<group>"; };
+		8D5AE6AD1607D8350ED6FF2DFBCAFDE2 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = MapboxSceneKit/Math.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9500226402F3ECA03F07F5D3A56F36EC /* parse_configuration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = parse_configuration.m; path = vendor/TrustKit/parse_configuration.m; sourceTree = "<group>"; };
-		959ED505E64DBD749035C83E70133F65 /* TSKReportsRateLimiter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKReportsRateLimiter.h; path = vendor/TrustKit/Reporting/TSKReportsRateLimiter.h; sourceTree = "<group>"; };
-		99178A92176116451640645A6418E064 /* reporting_utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = reporting_utils.h; path = vendor/TrustKit/Reporting/reporting_utils.h; sourceTree = "<group>"; };
-		99F3C220E14E70BFB0C7886ED0614CF0 /* MMENSURLSessionWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMENSURLSessionWrapper.h; path = MapboxMobileEvents/MMENSURLSessionWrapper.h; sourceTree = "<group>"; };
-		9DC8F4BF3E5EE9D521205FE9B2E1E12A /* MMETrustKitWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETrustKitWrapper.h; path = MapboxMobileEvents/MMETrustKitWrapper.h; sourceTree = "<group>"; };
-		9FC8464751F19621DA03F530952F3941 /* MMENSDateWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMENSDateWrapper.h; path = MapboxMobileEvents/MMENSDateWrapper.h; sourceTree = "<group>"; };
-		A208D91881684F4900C78B3CE68CEA88 /* MMEEventLogReportViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventLogReportViewController.m; path = MapboxMobileEvents/MMEEventLogReportViewController.m; sourceTree = "<group>"; };
+		98C4D9749C438574BC24FF2C2627DECD /* TerrainNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TerrainNode.swift; path = MapboxSceneKit/TerrainNode.swift; sourceTree = "<group>"; };
+		99A48E09DC6846F9264AFCA1561C22E5 /* MMENSDateWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMENSDateWrapper.h; path = MapboxMobileEvents/MMENSDateWrapper.h; sourceTree = "<group>"; };
+		9A7A2506EE4192CCBC9F6DA399CB0028 /* MMEUniqueIdentifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUniqueIdentifier.m; path = MapboxMobileEvents/MMEUniqueIdentifier.m; sourceTree = "<group>"; };
+		9E9F2D20E899A2F3657F8879DE71B6FD /* CGExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGExtensions.swift; path = MapboxSceneKit/Extensions/CGExtensions.swift; sourceTree = "<group>"; };
+		9EA07A9EAFA276446F334047B9251270 /* MapboxSceneKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxSceneKit.xcconfig; sourceTree = "<group>"; };
+		9F381BBEE07A886D9A7652B1C949A8A7 /* SCNExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCNExtensions.swift; path = MapboxSceneKit/Extensions/SCNExtensions.swift; sourceTree = "<group>"; };
+		9F7633414098143E169C0DFB6FDC80D7 /* MMEEventsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsManager.m; path = MapboxMobileEvents/MMEEventsManager.m; sourceTree = "<group>"; };
+		9FB14910EC1C2AFABE1DD5B5493F29FF /* MMEAPIClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEAPIClient.h; path = MapboxMobileEvents/MMEAPIClient.h; sourceTree = "<group>"; };
+		A54A15539433383E7685C360BF43CF77 /* CLLocation+MMEMobileEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+MMEMobileEvents.m"; path = "MapboxMobileEvents/CLLocation+MMEMobileEvents.m"; sourceTree = "<group>"; };
 		A6A25878A52F844D82B61B7E9DAA86BE /* Pods-MapboxCELADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxCELADemo.debug.xcconfig"; sourceTree = "<group>"; };
-		A6C5BC6B78564DE9F8EB4B0C0FF0707D /* TrustKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TrustKit.m; path = vendor/TrustKit/TrustKit.m; sourceTree = "<group>"; };
-		AB99E9B415FFF963C8381F10312741DA /* MMEDependencyManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEDependencyManager.m; path = MapboxMobileEvents/MMEDependencyManager.m; sourceTree = "<group>"; };
-		AD4F6E3DA99AAD179A0E61E3B71EC63D /* MMEUINavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEUINavigation.h; path = MapboxMobileEvents/MMEUINavigation.h; sourceTree = "<group>"; };
-		ADA097B8A40C956C54A609FB21333BCD /* ImageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBuilder.swift; path = "MapboxSceneKit/Tile Fetching/ImageBuilder.swift"; sourceTree = "<group>"; };
-		AF0CC2841AECBFE2631126E1A55A0559 /* MMEEventsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsManager.m; path = MapboxMobileEvents/MMEEventsManager.m; sourceTree = "<group>"; };
-		B1CFF7A9A32BDB340AB1BEE20A33B18F /* NSData+MMEGZIP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+MMEGZIP.m"; path = "MapboxMobileEvents/NSData+MMEGZIP.m"; sourceTree = "<group>"; };
-		B2E1DC4DFF1372F6F953D84CCDB4DDD0 /* logger.html */ = {isa = PBXFileReference; includeInIndex = 1; name = logger.html; path = MapboxMobileEvents/Resources/logger.html; sourceTree = "<group>"; };
-		B5DCF5F9C991547303757CAFD0AC7EA0 /* vendor_identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vendor_identifier.h; path = vendor/TrustKit/Reporting/vendor_identifier.h; sourceTree = "<group>"; };
-		B6446FA891AE8214916C9B89CA1364E4 /* MapboxSceneKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxSceneKit.xcconfig; sourceTree = "<group>"; };
-		B9FD079FFE426DF4AF61ACE7AFF71FA2 /* MMEEventsConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsConfiguration.h; path = MapboxMobileEvents/MMEEventsConfiguration.h; sourceTree = "<group>"; };
-		BC253BF26997B86C298792E5A2D1D9D7 /* MapboxMobileEvents-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxMobileEvents-prefix.pch"; sourceTree = "<group>"; };
-		BC983F29C232EA68E5AC8A3CB7CFA562 /* ssl_pin_verifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ssl_pin_verifier.m; path = vendor/TrustKit/Pinning/ssl_pin_verifier.m; sourceTree = "<group>"; };
-		C396E0B35060793F54CC48A13776AC2D /* SCNExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SCNExtensions.swift; path = MapboxSceneKit/Extensions/SCNExtensions.swift; sourceTree = "<group>"; };
-		C4DB89B657EFFAAA22B19604943AAADB /* MMELocationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMELocationManager.m; path = MapboxMobileEvents/MMELocationManager.m; sourceTree = "<group>"; };
-		C86A8473EC1167BDE5282831950000BC /* CLLocation+MMEMobileEvents.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CLLocation+MMEMobileEvents.m"; path = "MapboxMobileEvents/CLLocation+MMEMobileEvents.m"; sourceTree = "<group>"; };
-		CB50A24AB4F3313EEC1E38AE3EF35E68 /* MapboxMobileEvents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxMobileEvents.modulemap; sourceTree = "<group>"; };
-		D40DB73FA662E67461267285F19E802B /* MapboxSceneKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxSceneKit-prefix.pch"; sourceTree = "<group>"; };
-		D5F826ADD0B625F1F10170E412336781 /* ssl_pin_verifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_pin_verifier.h; path = vendor/TrustKit/Pinning/ssl_pin_verifier.h; sourceTree = "<group>"; };
-		DF14E8CBD0AAAEB0EFD18CDBA5CF43DE /* NSData+MMEGZIP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+MMEGZIP.h"; path = "MapboxMobileEvents/NSData+MMEGZIP.h"; sourceTree = "<group>"; };
+		AD8732F3193C7F0488B5BFE94CDF187C /* TSKPinningValidator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinningValidator.m; path = vendor/TrustKit/TSKPinningValidator.m; sourceTree = "<group>"; };
+		B367EF25F8F07CAB2E3ADF6090AD8809 /* TSKPinningValidator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidator.h; path = vendor/TrustKit/TSKPinningValidator.h; sourceTree = "<group>"; };
+		B4B7102B0BC0F29D51587E82B1778187 /* MMEEventsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsConfiguration.m; path = MapboxMobileEvents/MMEEventsConfiguration.m; sourceTree = "<group>"; };
+		B5FE6977B73FC6C5DEFA91EE5B5DC74C /* MMECategoryLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECategoryLoader.h; path = MapboxMobileEvents/MMECategoryLoader.h; sourceTree = "<group>"; };
+		B8A6F30724E62F29AB97688364C47B0A /* MMEEventsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEEventsManager.h; path = MapboxMobileEvents/MMEEventsManager.h; sourceTree = "<group>"; };
+		B8DDAD44F75785FC6FF8DCF03F023F7E /* MMEUINavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUINavigation.m; path = MapboxMobileEvents/MMEUINavigation.m; sourceTree = "<group>"; };
+		BD36ECAFAC246A395662968D9F7E781A /* MMETimerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETimerManager.m; path = MapboxMobileEvents/MMETimerManager.m; sourceTree = "<group>"; };
+		BD6DF217288ED5A4F175124DB4BF4480 /* MapboxImageAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapboxImageAPI.swift; path = MapboxSceneKit/MapboxImageAPI.swift; sourceTree = "<group>"; };
+		C066B3A09E7FF8593C63A2F7545D6976 /* MMECommonEventData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMECommonEventData.m; path = MapboxMobileEvents/MMECommonEventData.m; sourceTree = "<group>"; };
+		C2070FB221AF97B070C8057AD8EDA847 /* MapboxMobileEvents.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MapboxMobileEvents.modulemap; sourceTree = "<group>"; };
+		C263085BF29EADC2588128B80783E40E /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		C285308BEE6C221640428A0724C4DD2F /* MMEEventLogReportViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventLogReportViewController.m; path = MapboxMobileEvents/MMEEventLogReportViewController.m; sourceTree = "<group>"; };
+		CC090ABF11D5EFED0B6505A63BF669EA /* parse_configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = parse_configuration.h; path = vendor/TrustKit/parse_configuration.h; sourceTree = "<group>"; };
+		CE87A6B88226C16903C10D5E7792A7FF /* ssl_pin_verifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ssl_pin_verifier.h; path = vendor/TrustKit/Pinning/ssl_pin_verifier.h; sourceTree = "<group>"; };
+		CF8E19B144F1D9AB010ED3AAEFA60B55 /* MMETrustKitWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETrustKitWrapper.m; path = MapboxMobileEvents/MMETrustKitWrapper.m; sourceTree = "<group>"; };
+		D56667B65E96D291F80BB38B7F74958C /* TSKPinningValidatorResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKPinningValidatorResult.m; path = vendor/TrustKit/TSKPinningValidatorResult.m; sourceTree = "<group>"; };
+		D78A1E95718E8ED2AA67B0CFC018DB39 /* ImageBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBuilder.swift; path = "MapboxSceneKit/Tile Fetching/ImageBuilder.swift"; sourceTree = "<group>"; };
+		D90C9707EAF7AE8A39E3325BC48BC5BC /* vendor_identifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = vendor_identifier.h; path = vendor/TrustKit/Reporting/vendor_identifier.h; sourceTree = "<group>"; };
+		DE91D328D98763085A327F4899DE4AA9 /* MapboxMobileEvents.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MapboxMobileEvents.xcconfig; sourceTree = "<group>"; };
 		E0C57EB3EACABED8FDBE31761EE49243 /* Pods-MapboxCELADemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapboxCELADemo-dummy.m"; sourceTree = "<group>"; };
-		E2F56CCD77E7585C906AD873960F9783 /* MMENSURLSessionWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMENSURLSessionWrapper.m; path = MapboxMobileEvents/MMENSURLSessionWrapper.m; sourceTree = "<group>"; };
+		E15E828A84B3C67C934AD481C14353D0 /* TSKSPKIHashCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKSPKIHashCache.m; path = vendor/TrustKit/Pinning/TSKSPKIHashCache.m; sourceTree = "<group>"; };
+		E1C18B28407C0662CDDD86D8170C38F8 /* MMEDependencyManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEDependencyManager.h; path = MapboxMobileEvents/MMEDependencyManager.h; sourceTree = "<group>"; };
+		E2DA1B177A64F09E09B94FBEF999B2A5 /* MMETypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMETypes.m; path = MapboxMobileEvents/MMETypes.m; sourceTree = "<group>"; };
 		E45788FBA836ADC6A155977B7317D405 /* Pods-MapboxCELADemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxCELADemo-resources.sh"; sourceTree = "<group>"; };
-		E5E25DEE3CB222D00DD9442FE7D07567 /* TSKSPKIHashCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKSPKIHashCache.h; path = vendor/TrustKit/Pinning/TSKSPKIHashCache.h; sourceTree = "<group>"; };
-		E70AE3DBD2650FCA9816348D08D9F963 /* MMEUINavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUINavigation.m; path = MapboxMobileEvents/MMEUINavigation.m; sourceTree = "<group>"; };
+		E7E0A8833A63787FE6E84EB158CD2E26 /* TSKPinFailureReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinFailureReport.h; path = vendor/TrustKit/Reporting/TSKPinFailureReport.h; sourceTree = "<group>"; };
 		E7F7CD1DEC5C9E6372AE86C4ED8855D9 /* MapboxMobileEvents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapboxMobileEvents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F09115B1F62C067CAB50EFCBBB5B5D65 /* MMETypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMETypes.h; path = MapboxMobileEvents/MMETypes.h; sourceTree = "<group>"; };
-		F21311CC3CCBB1A65FD52E4B26791BC3 /* vendor_identifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = vendor_identifier.m; path = vendor/TrustKit/Reporting/vendor_identifier.m; sourceTree = "<group>"; };
-		F4D8DD01F8A76BE5470B4053F645CC07 /* TSKPinningValidator_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKPinningValidator_Private.h; path = vendor/TrustKit/TSKPinningValidator_Private.h; sourceTree = "<group>"; };
-		F57263E13A0BFF876C64A115A53BF591 /* HTTPRequestOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequestOperation.swift; path = "MapboxSceneKit/Tile Fetching/HTTPRequestOperation.swift"; sourceTree = "<group>"; };
-		F5D2D4E0331F8A7F392DEE3E3C37E41B /* MMEEventsConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsConfiguration.m; path = MapboxMobileEvents/MMEEventsConfiguration.m; sourceTree = "<group>"; };
-		F796644808974AC224D41DB88D4E0115 /* MMEReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMEReachability.h; path = MapboxMobileEvents/Reachability/MMEReachability.h; sourceTree = "<group>"; };
+		EA6B3B3F5B5FC28DDEDD093AD7375738 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		EFDC82C17E55C00DFCB1ED0EBBAB5892 /* HTTPRequestOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPRequestOperation.swift; path = "MapboxSceneKit/Tile Fetching/HTTPRequestOperation.swift"; sourceTree = "<group>"; };
+		F186E13E4BF7BF0CA1CC33E824CBBC4D /* MapboxMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MapboxMobileEvents.h; path = MapboxMobileEvents/MapboxMobileEvents.h; sourceTree = "<group>"; };
+		F402DC90FE24F108C06DC008DCA90188 /* MMEEventsService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEEventsService.m; path = MapboxMobileEvents/MMEEventsService.m; sourceTree = "<group>"; };
+		F488D995C0A8839CFC9312D12D94288F /* MapboxSceneKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MapboxSceneKit-prefix.pch"; sourceTree = "<group>"; };
+		F73303C75DDC4625A80075D60E55A2F7 /* MMECommonEventData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMECommonEventData.h; path = MapboxMobileEvents/MMECommonEventData.h; sourceTree = "<group>"; };
+		F7471CC15D47B98FCF60DFE3C187A547 /* CLLocation+MMEMobileEvents.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CLLocation+MMEMobileEvents.h"; path = "MapboxMobileEvents/CLLocation+MMEMobileEvents.h"; sourceTree = "<group>"; };
 		F88169E42040ADB60130B1B0F18B495E /* Pods-MapboxCELADemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MapboxCELADemo-umbrella.h"; sourceTree = "<group>"; };
-		F9536F0B5AB3EFADB38EFACA875B61BC /* MMEUniqueIdentifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMEUniqueIdentifier.m; path = MapboxMobileEvents/MMEUniqueIdentifier.m; sourceTree = "<group>"; };
-		FAE494E7B5EEEC0EA7AA8A6E522FC8B0 /* TSKSPKIHashCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TSKSPKIHashCache.m; path = vendor/TrustKit/Pinning/TSKSPKIHashCache.m; sourceTree = "<group>"; };
-		FB338B622DB70D416E2BE6228C76AA1F /* TSKTrustDecision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKTrustDecision.h; path = vendor/TrustKit/TSKTrustDecision.h; sourceTree = "<group>"; };
+		F88956DB0792995498C07E65CF629ED1 /* TSKTrustDecision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TSKTrustDecision.h; path = vendor/TrustKit/TSKTrustDecision.h; sourceTree = "<group>"; };
+		F9BD254F2592D3DA388172F6BAF6B56F /* MMENSURLSessionWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMENSURLSessionWrapper.m; path = MapboxMobileEvents/MMENSURLSessionWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +282,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090D364617B83B679C01963E7A61FEC9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				11BB5D38F8AD7B9A8DF6163C2D2204FC /* logger.html */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0EB26E038D1126A65E2423A47A6292DA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1033A73C21AF824224E9EE2032FD42DE /* Info.plist */,
+				4DCB1F4510224425D7232E69DC0F6C84 /* MapboxSceneKit.modulemap */,
+				9EA07A9EAFA276446F334047B9251270 /* MapboxSceneKit.xcconfig */,
+				298E32D2472814DEE20E94E782B536CE /* MapboxSceneKit-dummy.m */,
+				F488D995C0A8839CFC9312D12D94288F /* MapboxSceneKit-prefix.pch */,
+				39F9041DB1C43102C0565A0510826F81 /* MapboxSceneKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MapboxSceneKit";
+			sourceTree = "<group>";
+		};
 		1F08B69081520678E18F44E209FB2910 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,127 +314,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F6525DF08CF2A2BF2A1DAC48B193BC4 /* MapboxMobileEvents */ = {
+		6C50B15D8E219B2AAA97BB169D35B7ED /* GooglePlaces */ = {
 			isa = PBXGroup;
 			children = (
-				2CD088E20D7938137CA7070170BABDB9 /* CLLocation+MMEMobileEvents.h */,
-				C86A8473EC1167BDE5282831950000BC /* CLLocation+MMEMobileEvents.m */,
-				64625294591A9AB93B30552102A248A1 /* configuration_utils.h */,
-				60C1CF0267DB750BE8F9FFC3EF111F03 /* configuration_utils.m */,
-				0BA892D3236CD7E87E7A807F3A2276BC /* MapboxMobileEvents.h */,
-				3572ED24DEF5AB1E03689F52672C73E9 /* MMEAPIClient.h */,
-				36587975E612EC0758914CEFADFFEF8C /* MMEAPIClient.m */,
-				379C2167DA0210EEAD91FFA8A5F7AF06 /* MMECategoryLoader.h */,
-				2DD0BBAB99EB19CB364A238D3F9E5B7E /* MMECategoryLoader.m */,
-				445BCDB4108C783B042198D0D39C1281 /* MMECommonEventData.h */,
-				84342AA8E9719F11378C70066701C7BB /* MMECommonEventData.m */,
-				21DCB145616AC2FA58BE32CB4EDF11BE /* MMEConstants.h */,
-				0AB44A50407B23A185361891945ACF5F /* MMEConstants.m */,
-				7521887BF0734D8073F1C91E962F0BB7 /* MMEDependencyManager.h */,
-				AB99E9B415FFF963C8381F10312741DA /* MMEDependencyManager.m */,
-				2069081E95FBD74336EE0B574C3EEB43 /* MMEEvent.h */,
-				888299B2F6BC4BAC0D135E0C68792186 /* MMEEvent.m */,
-				6FC8049E195807DFB2B5F0BF008743EC /* MMEEventLogger.h */,
-				6483633B8495EB5015672B3CE9A43102 /* MMEEventLogger.m */,
-				0DF21345B7D505EFB00FDAB7966DA015 /* MMEEventLogReportViewController.h */,
-				A208D91881684F4900C78B3CE68CEA88 /* MMEEventLogReportViewController.m */,
-				B9FD079FFE426DF4AF61ACE7AFF71FA2 /* MMEEventsConfiguration.h */,
-				F5D2D4E0331F8A7F392DEE3E3C37E41B /* MMEEventsConfiguration.m */,
-				8F3BE74B1D67B0EE08C082971E5661CC /* MMEEventsManager.h */,
-				AF0CC2841AECBFE2631126E1A55A0559 /* MMEEventsManager.m */,
-				0F385DDBCD80F0A220DC84100304987F /* MMEEventsService.h */,
-				3AC82DB16B3CF8219B12ED215B858F7E /* MMEEventsService.m */,
-				7E2F34686D47F429954F0CCB4E9020D4 /* MMELocationManager.h */,
-				C4DB89B657EFFAAA22B19604943AAADB /* MMELocationManager.m */,
-				9FC8464751F19621DA03F530952F3941 /* MMENSDateWrapper.h */,
-				19A7C81F33A328E73823DEC0C3209E5D /* MMENSDateWrapper.m */,
-				99F3C220E14E70BFB0C7886ED0614CF0 /* MMENSURLSessionWrapper.h */,
-				E2F56CCD77E7585C906AD873960F9783 /* MMENSURLSessionWrapper.m */,
-				F796644808974AC224D41DB88D4E0115 /* MMEReachability.h */,
-				489C0AB447EA7337EFBCBEB580E7097F /* MMEReachability.m */,
-				3D47127C6F78247789B88B3693B448FF /* MMETimerManager.h */,
-				7901C79E522900E86F267977D240BDCC /* MMETimerManager.m */,
-				9DC8F4BF3E5EE9D521205FE9B2E1E12A /* MMETrustKitWrapper.h */,
-				83A9F2FC0A53EDCCF05D1CA5A01E0B17 /* MMETrustKitWrapper.m */,
-				F09115B1F62C067CAB50EFCBBB5B5D65 /* MMETypes.h */,
-				6FE87D440DBBE6DC9FB5B7619972786E /* MMETypes.m */,
-				66B1ADA0FC0D505C96AA2AE3889447A6 /* MMEUIApplicationWrapper.h */,
-				280F6310C8BDAF143E1611360EA3D150 /* MMEUIApplicationWrapper.m */,
-				AD4F6E3DA99AAD179A0E61E3B71EC63D /* MMEUINavigation.h */,
-				E70AE3DBD2650FCA9816348D08D9F963 /* MMEUINavigation.m */,
-				2C4E297EC3CD323C24D72219D63DAC60 /* MMEUniqueIdentifier.h */,
-				F9536F0B5AB3EFADB38EFACA875B61BC /* MMEUniqueIdentifier.m */,
-				DF14E8CBD0AAAEB0EFD18CDBA5CF43DE /* NSData+MMEGZIP.h */,
-				B1CFF7A9A32BDB340AB1BEE20A33B18F /* NSData+MMEGZIP.m */,
-				3A8AFB113BECB0008EA7A992F8E19CF0 /* parse_configuration.h */,
-				9500226402F3ECA03F07F5D3A56F36EC /* parse_configuration.m */,
-				99178A92176116451640645A6418E064 /* reporting_utils.h */,
-				3EA85D9D7844DAD7CD36161E784FD1EE /* reporting_utils.m */,
-				D5F826ADD0B625F1F10170E412336781 /* ssl_pin_verifier.h */,
-				BC983F29C232EA68E5AC8A3CB7CFA562 /* ssl_pin_verifier.m */,
-				2CCD654ECC642BED3B7195F194E62D98 /* TrustKit.h */,
-				A6C5BC6B78564DE9F8EB4B0C0FF0707D /* TrustKit.m */,
-				9151C695849FC12E21D7FABB1A52A115 /* TSKBackgroundReporter.h */,
-				323764E1550E58306D820644DAF9F432 /* TSKBackgroundReporter.m */,
-				196D2ED68773769C9A2575DA5526229B /* TSKLog.h */,
-				1E6E95782C6D80755843840B4EB02B5E /* TSKPinFailureReport.h */,
-				76ED120DC74D3393A0782C0458704658 /* TSKPinFailureReport.m */,
-				34100E45E3AF0E6BD3394D9814C441B8 /* TSKPinningValidator.h */,
-				4BE4ED4944B4D0C362F6DB091BB30736 /* TSKPinningValidator.m */,
-				F4D8DD01F8A76BE5470B4053F645CC07 /* TSKPinningValidator_Private.h */,
-				2243DD3EE94D6083D951C5FDBEEE7444 /* TSKPinningValidatorCallback.h */,
-				8162C3659DDDC83866BF7173B653BED4 /* TSKPinningValidatorResult.h */,
-				499E9CA836234EEE818AAED732FF5E74 /* TSKPinningValidatorResult.m */,
-				451EB4B5882488ACB1603D0FA57CC566 /* TSKPublicKeyAlgorithm.h */,
-				959ED505E64DBD749035C83E70133F65 /* TSKReportsRateLimiter.h */,
-				796ED0023FA7A43CC6C25ADDC08ADC0E /* TSKReportsRateLimiter.m */,
-				E5E25DEE3CB222D00DD9442FE7D07567 /* TSKSPKIHashCache.h */,
-				FAE494E7B5EEEC0EA7AA8A6E522FC8B0 /* TSKSPKIHashCache.m */,
-				FB338B622DB70D416E2BE6228C76AA1F /* TSKTrustDecision.h */,
-				6EA2F0260BB3F7568E868FCF4BFF4577 /* TSKTrustKitConfig.h */,
-				91DA447F007D5582097370C4701F497E /* TSKTrustKitConfig.m */,
-				B5DCF5F9C991547303757CAFD0AC7EA0 /* vendor_identifier.h */,
-				F21311CC3CCBB1A65FD52E4B26791BC3 /* vendor_identifier.m */,
-				3A43FA1C51C780DC662FAD4B5A1098F7 /* Resources */,
-				878FCFB6819F2B63227BCB72F393F81E /* Support Files */,
+				E6F1C622DFB269EF56B771E605B3E535 /* Frameworks */,
+				7AF795C6B69AFF55E0F950A12DC7A22F /* Resources */,
 			);
-			name = MapboxMobileEvents;
-			path = MapboxMobileEvents;
+			name = GooglePlaces;
+			path = GooglePlaces;
 			sourceTree = "<group>";
 		};
-		31C05F265DF3773B1C07A44799239FE4 /* Pods */ = {
+		7AF795C6B69AFF55E0F950A12DC7A22F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2F6525DF08CF2A2BF2A1DAC48B193BC4 /* MapboxMobileEvents */,
-				6359EF672A85D14B4A6B26EE3A1E6AD8 /* MapboxSceneKit */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		3A43FA1C51C780DC662FAD4B5A1098F7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				B2E1DC4DFF1372F6F953D84CCDB4DDD0 /* logger.html */,
+				54AB1A05B24580D99DACA8A03DD3FF70 /* GooglePlaces.bundle */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		6359EF672A85D14B4A6B26EE3A1E6AD8 /* MapboxSceneKit */ = {
-			isa = PBXGroup;
-			children = (
-				55460B89050F3118428F0A2039E9973E /* AsyncOperation.swift */,
-				66BB91A38EFC3C8286821243C020A1E2 /* CGExtensions.swift */,
-				F57263E13A0BFF876C64A115A53BF591 /* HTTPRequestOperation.swift */,
-				ADA097B8A40C956C54A609FB21333BCD /* ImageBuilder.swift */,
-				01529CEF305B8E04C0E780E55F048E93 /* MapboxHTTPAPI.swift */,
-				7C42BBC1D21EA35A8B50EA05FF7D4D32 /* MapboxImageAPI.swift */,
-				4788DB15A0D83C814C2BF5AE5AAB5665 /* Math.swift */,
-				C396E0B35060793F54CC48A13776AC2D /* SCNExtensions.swift */,
-				90AB561C11A5C7E4C560130973444040 /* TerrainNode.swift */,
-				AB4925BBE184197770ACABF3E9C49E04 /* Support Files */,
-			);
-			name = MapboxSceneKit;
-			path = MapboxSceneKit;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -417,38 +337,165 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				EE84B648454342BFDA1B579592E3D66F /* Frameworks */,
-				31C05F265DF3773B1C07A44799239FE4 /* Pods */,
+				AB5C89A1CB11AC475A48EDF324C95444 /* Pods */,
 				1F08B69081520678E18F44E209FB2910 /* Products */,
 				F5DEA0C6060CFD853BD5F01FBF459937 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		878FCFB6819F2B63227BCB72F393F81E /* Support Files */ = {
+		9BF65DFFF9FADBB5288903C52B16CE61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				621E38A83E34A7B5F47F7CC9EE44E276 /* Info.plist */,
-				CB50A24AB4F3313EEC1E38AE3EF35E68 /* MapboxMobileEvents.modulemap */,
-				4F65732E774B18BAB89524907A60B5D5 /* MapboxMobileEvents.xcconfig */,
-				3B3EA2EFE313DAF2D0C5B478509404F1 /* MapboxMobileEvents-dummy.m */,
-				BC253BF26997B86C298792E5A2D1D9D7 /* MapboxMobileEvents-prefix.pch */,
-				48DFA927C9C8794E9AE81F8D46B8C5EA /* MapboxMobileEvents-umbrella.h */,
+				C263085BF29EADC2588128B80783E40E /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EDDA6356604877260C9EE7DBB25514F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0892B4BD997032D2B584A36C0B3B3CCC /* Info.plist */,
+				C2070FB221AF97B070C8057AD8EDA847 /* MapboxMobileEvents.modulemap */,
+				DE91D328D98763085A327F4899DE4AA9 /* MapboxMobileEvents.xcconfig */,
+				504FF8C6DE296BB6B9A5ECA4D111CC91 /* MapboxMobileEvents-dummy.m */,
+				88E6B4F9B559C916BE975D86F0952871 /* MapboxMobileEvents-prefix.pch */,
+				8465274F33166F7BF5FA527E92A6978C /* MapboxMobileEvents-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/MapboxMobileEvents";
 			sourceTree = "<group>";
 		};
-		AB4925BBE184197770ACABF3E9C49E04 /* Support Files */ = {
+		9F6C134E26A9316536B1036196224683 /* MapboxSceneKit */ = {
 			isa = PBXGroup;
 			children = (
-				3A4DAC847C97F22EB96331BAF63407A1 /* Info.plist */,
-				5BB86458EFCEBF6792AE804FA09B97C7 /* MapboxSceneKit.modulemap */,
-				B6446FA891AE8214916C9B89CA1364E4 /* MapboxSceneKit.xcconfig */,
-				1815DA7DF04844ED43FC881B38243A6F /* MapboxSceneKit-dummy.m */,
-				D40DB73FA662E67461267285F19E802B /* MapboxSceneKit-prefix.pch */,
-				79A41073BE0895F62B4640BFCCE8D23A /* MapboxSceneKit-umbrella.h */,
+				5DC0B7AE97EE5CD4589DEF4705F86874 /* AsyncOperation.swift */,
+				9E9F2D20E899A2F3657F8879DE71B6FD /* CGExtensions.swift */,
+				EFDC82C17E55C00DFCB1ED0EBBAB5892 /* HTTPRequestOperation.swift */,
+				D78A1E95718E8ED2AA67B0CFC018DB39 /* ImageBuilder.swift */,
+				34CD504DE1245A62B8FF02E5046EC2BE /* MapboxHTTPAPI.swift */,
+				BD6DF217288ED5A4F175124DB4BF4480 /* MapboxImageAPI.swift */,
+				8D5AE6AD1607D8350ED6FF2DFBCAFDE2 /* Math.swift */,
+				9F381BBEE07A886D9A7652B1C949A8A7 /* SCNExtensions.swift */,
+				98C4D9749C438574BC24FF2C2627DECD /* TerrainNode.swift */,
+				0EB26E038D1126A65E2423A47A6292DA /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MapboxSceneKit";
+			name = MapboxSceneKit;
+			path = MapboxSceneKit;
+			sourceTree = "<group>";
+		};
+		AB5C89A1CB11AC475A48EDF324C95444 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F95BD2694C38BCBB4F46CC0F20D79C57 /* GoogleMaps */,
+				6C50B15D8E219B2AAA97BB169D35B7ED /* GooglePlaces */,
+				C7740C03FC9DC06D417A86AEC6D54CD9 /* MapboxMobileEvents */,
+				9F6C134E26A9316536B1036196224683 /* MapboxSceneKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B81D93AFB2536F70A5C8B3C93DA9289E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9BF65DFFF9FADBB5288903C52B16CE61 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		C7740C03FC9DC06D417A86AEC6D54CD9 /* MapboxMobileEvents */ = {
+			isa = PBXGroup;
+			children = (
+				F7471CC15D47B98FCF60DFE3C187A547 /* CLLocation+MMEMobileEvents.h */,
+				A54A15539433383E7685C360BF43CF77 /* CLLocation+MMEMobileEvents.m */,
+				5743F04919B308C2BBD9E61F57DE078E /* configuration_utils.h */,
+				8A70A7C86E75A0A27DB705718F1651C8 /* configuration_utils.m */,
+				F186E13E4BF7BF0CA1CC33E824CBBC4D /* MapboxMobileEvents.h */,
+				9FB14910EC1C2AFABE1DD5B5493F29FF /* MMEAPIClient.h */,
+				39F8BC26EECACDBC9113EF880A3CFC14 /* MMEAPIClient.m */,
+				B5FE6977B73FC6C5DEFA91EE5B5DC74C /* MMECategoryLoader.h */,
+				024CC825A58E1C25C2AD496A559F11F3 /* MMECategoryLoader.m */,
+				F73303C75DDC4625A80075D60E55A2F7 /* MMECommonEventData.h */,
+				C066B3A09E7FF8593C63A2F7545D6976 /* MMECommonEventData.m */,
+				2A42DB6C9F471C8F7744646C16E2CE9F /* MMEConstants.h */,
+				5EC66E2B9CD6079CB24F50D1E482BB92 /* MMEConstants.m */,
+				E1C18B28407C0662CDDD86D8170C38F8 /* MMEDependencyManager.h */,
+				1541D302C846DC382DC3703010BD5634 /* MMEDependencyManager.m */,
+				5BE8E8FDF7483442263C3C8DAA4AC57F /* MMEEvent.h */,
+				511ED282F8FE4002672453851FB857A2 /* MMEEvent.m */,
+				6B1C07EB97E068ECF540E65928E62D83 /* MMEEventLogger.h */,
+				735E12E9E0E12A0CCF7CC764230EA541 /* MMEEventLogger.m */,
+				227400A5A8F256BA19373F836A873AAB /* MMEEventLogReportViewController.h */,
+				C285308BEE6C221640428A0724C4DD2F /* MMEEventLogReportViewController.m */,
+				2FD0F133E04CD6D627D34D3D439E6399 /* MMEEventsConfiguration.h */,
+				B4B7102B0BC0F29D51587E82B1778187 /* MMEEventsConfiguration.m */,
+				B8A6F30724E62F29AB97688364C47B0A /* MMEEventsManager.h */,
+				9F7633414098143E169C0DFB6FDC80D7 /* MMEEventsManager.m */,
+				2D92F7B30E0ADF34A63F38FE7997A365 /* MMEEventsService.h */,
+				F402DC90FE24F108C06DC008DCA90188 /* MMEEventsService.m */,
+				6A76548FB9C19683FA829C113A048FBC /* MMELocationManager.h */,
+				39AC00339A630741F681BBDEE29F7638 /* MMELocationManager.m */,
+				99A48E09DC6846F9264AFCA1561C22E5 /* MMENSDateWrapper.h */,
+				72195E6D2FE577C289FBCA6C1E7F87A9 /* MMENSDateWrapper.m */,
+				6DA4CE2DC90B9CD15734E7AE82FFD465 /* MMENSURLSessionWrapper.h */,
+				F9BD254F2592D3DA388172F6BAF6B56F /* MMENSURLSessionWrapper.m */,
+				561906034A29524F16A2AE1D342776D8 /* MMEReachability.h */,
+				5462AE4E548BA9D222156E73A5644096 /* MMEReachability.m */,
+				2CCD634490C81C40F637F82173AEACBB /* MMETimerManager.h */,
+				BD36ECAFAC246A395662968D9F7E781A /* MMETimerManager.m */,
+				55E1C6345E469768149B3D32D2AC20AA /* MMETrustKitWrapper.h */,
+				CF8E19B144F1D9AB010ED3AAEFA60B55 /* MMETrustKitWrapper.m */,
+				716587C9715F0C7F1DA16965638A2A3B /* MMETypes.h */,
+				E2DA1B177A64F09E09B94FBEF999B2A5 /* MMETypes.m */,
+				5A444CEC3D1D49717E7E29A3710C48C5 /* MMEUIApplicationWrapper.h */,
+				5AFCBF734EFCCB2C43A8C1032F200E15 /* MMEUIApplicationWrapper.m */,
+				68642FDB2E3EB079AEE382B392FC2F65 /* MMEUINavigation.h */,
+				B8DDAD44F75785FC6FF8DCF03F023F7E /* MMEUINavigation.m */,
+				3F509E506076F083607DF2F89A7E7DB9 /* MMEUniqueIdentifier.h */,
+				9A7A2506EE4192CCBC9F6DA399CB0028 /* MMEUniqueIdentifier.m */,
+				821DBF0559FA9D72C34DD9B37E67DAD9 /* NSData+MMEGZIP.h */,
+				81AA820A64EDAE234F87606F830DA82A /* NSData+MMEGZIP.m */,
+				CC090ABF11D5EFED0B6505A63BF669EA /* parse_configuration.h */,
+				18A56C814C90AF5694ECA6FA26522B3F /* parse_configuration.m */,
+				72659A773D0C524AA0512421510CCB7B /* reporting_utils.h */,
+				6A5AF8A0EB21154656A0C7E9938467AD /* reporting_utils.m */,
+				CE87A6B88226C16903C10D5E7792A7FF /* ssl_pin_verifier.h */,
+				040FFE5D00DD8F326DFCE2E699673AF1 /* ssl_pin_verifier.m */,
+				1FE9B4CFEA1D27CD618EAD90985A45C7 /* TrustKit.h */,
+				8400D430AA3883E33B686D879A8C78E4 /* TrustKit.m */,
+				17B8C789A0F3F1C778508AACD4245C27 /* TSKBackgroundReporter.h */,
+				77EFC3F25ECBC72616D0D6697A8C3EEC /* TSKBackgroundReporter.m */,
+				5534EC015DBD47E48E44E11B1F526B0E /* TSKLog.h */,
+				E7E0A8833A63787FE6E84EB158CD2E26 /* TSKPinFailureReport.h */,
+				5A2D87B0C5EE00956E91F6A20A8D2C84 /* TSKPinFailureReport.m */,
+				B367EF25F8F07CAB2E3ADF6090AD8809 /* TSKPinningValidator.h */,
+				AD8732F3193C7F0488B5BFE94CDF187C /* TSKPinningValidator.m */,
+				512A02F52C1F2D3AF0D3D46B9B9D48AA /* TSKPinningValidator_Private.h */,
+				7A2C66FCD5C89543809FABC57752E3E2 /* TSKPinningValidatorCallback.h */,
+				4BC8E8BA53971F91D16238C37872C6BC /* TSKPinningValidatorResult.h */,
+				D56667B65E96D291F80BB38B7F74958C /* TSKPinningValidatorResult.m */,
+				2610919C108F71C42AFE2448C7D47139 /* TSKPublicKeyAlgorithm.h */,
+				0C3BB06583F29D45F7C9F652DD61EBED /* TSKReportsRateLimiter.h */,
+				42468DE14CB2BCFD25F54FA05800DD8F /* TSKReportsRateLimiter.m */,
+				81C97139F94AB2D2AEAB3E2557AEC314 /* TSKSPKIHashCache.h */,
+				E15E828A84B3C67C934AD481C14353D0 /* TSKSPKIHashCache.m */,
+				F88956DB0792995498C07E65CF629ED1 /* TSKTrustDecision.h */,
+				0468B21911ECDB4E272C9F9C2650AC02 /* TSKTrustKitConfig.h */,
+				65E3AB29C2D19D55921ED8B7D0BD0EDE /* TSKTrustKitConfig.m */,
+				D90C9707EAF7AE8A39E3325BC48BC5BC /* vendor_identifier.h */,
+				44D915B3BA06F5543BEB275CE1419544 /* vendor_identifier.m */,
+				090D364617B83B679C01963E7A61FEC9 /* Resources */,
+				9EDDA6356604877260C9EE7DBB25514F /* Support Files */,
+			);
+			name = MapboxMobileEvents;
+			path = MapboxMobileEvents;
+			sourceTree = "<group>";
+		};
+		E6F1C622DFB269EF56B771E605B3E535 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA6B3B3F5B5FC28DDEDD093AD7375738 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EE84B648454342BFDA1B579592E3D66F /* Frameworks */ = {
@@ -492,6 +539,15 @@
 				0A8370B5FF2C843D09D5E19F1CED9308 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F95BD2694C38BCBB4F46CC0F20D79C57 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				B81D93AFB2536F70A5C8B3C93DA9289E /* Base */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -756,7 +812,7 @@
 /* Begin XCBuildConfiguration section */
 		3A83FDBBE1F5BAFF9F3607C163C0EE7F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6446FA891AE8214916C9B89CA1364E4 /* MapboxSceneKit.xcconfig */;
+			baseConfigurationReference = 9EA07A9EAFA276446F334047B9251270 /* MapboxSceneKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -946,7 +1002,7 @@
 		};
 		B66C480811635646608EC797D0D293FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F65732E774B18BAB89524907A60B5D5 /* MapboxMobileEvents.xcconfig */;
+			baseConfigurationReference = DE91D328D98763085A327F4899DE4AA9 /* MapboxMobileEvents.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -978,7 +1034,7 @@
 		};
 		B8C3EC59C25647BF1B2B4AA9EA4E461F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F65732E774B18BAB89524907A60B5D5 /* MapboxMobileEvents.xcconfig */;
+			baseConfigurationReference = DE91D328D98763085A327F4899DE4AA9 /* MapboxMobileEvents.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1045,7 +1101,7 @@
 		};
 		FE39D7FAAADF4CBAEB26097087EB94FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B6446FA891AE8214916C9B89CA1364E4 /* MapboxSceneKit.xcconfig */;
+			baseConfigurationReference = 9EA07A9EAFA276446F334047B9251270 /* MapboxSceneKit.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";

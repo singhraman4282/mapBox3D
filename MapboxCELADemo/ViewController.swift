@@ -38,9 +38,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var focusSquare: FocusSquare?
     var lastDragResult: ARHitTestResult?
     var startScale: Float?
-    var cityLattitude = 0.0
-    var cityLongitude = 0.0
-    var cityName = ""
     var placeNamesArray = [String]()
     
     let elevationManager = ElevationManager()
@@ -145,7 +142,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         terrainNode.fetchTerrainTexture("mapbox/satellite-v9", zoom: 14, progress: { _, _ in }, completion: { image in
             NSLog("Texture load complete")
             terrainNode.geometry?.materials[4].diffuse.contents = image
-            self.cityLabel.text = self.cityName
+            self.cityLabel.text = cityName
             self.lookupButtonOutlet.isHidden = false
         })
         
