@@ -12,7 +12,7 @@ import CoreLocation
 
 class AnnotationManager: NSObject {
     
-
+    
     let locationManager = CLLocationManager()
     var placeNamesArray = [String]()
     
@@ -21,12 +21,9 @@ class AnnotationManager: NSObject {
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "GET"
         
-        print("AnnotationManager:Search Item: \(searchItem)")
-        
         request.addValue("Bearer 1Xhul00_71BPzNJS446OOWyN9qCnWnBz9aYEcazRIW7BC8cKENhRFiom9ihm22D9eI7FR8pLLDp7mRUh_Bx7jmq0V5UdsDVGeP3vurbyZ_UGHQZ0KCwt5mI66DPjWnYx", forHTTPHeaderField: "Authorization")
         
         let task = URLSession.shared.dataTask(with: request as URLRequest) { (data: Data?, response: URLResponse?, error: Error?) in
-            
             guard let data = data else {
                 print("no data returned from server \(String(describing: error?.localizedDescription))")
                 return
@@ -35,7 +32,6 @@ class AnnotationManager: NSObject {
             var json: [String: Any]?
             do {
                 json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
-                
             } catch {
                 print("json fail")
             }
@@ -95,10 +91,10 @@ class AnnotationManager: NSObject {
     }
     
     func addAnnotationsToNode(_ terrainNode:SCNNode, annotationType:String, annotationTextColor: UIColor, withTerrainlattitude cityLat:Double, withTerrainLongitude cityLon:Double, usingNodeFactory nodeFactory:NodeFactory) {
-
+        
         var cityLattitude = cityLat
         var cityLongitude = cityLon
-
+        
         if cityLattitude == 0.0 {
             cityLattitude = (self.locationManager.location?.coordinate.latitude)!
             cityLongitude = (self.locationManager.location?.coordinate.longitude)!
@@ -118,21 +114,20 @@ class AnnotationManager: NSObject {
                         if let json = json {
                             
                             let allPlaces = json["businesses"] as! [[String : Any]];
-                            print(allPlaces.count)
                             
                             for i in 0..<allPlaces.count {
                                 var thisCafe = Annotation()
                                 var thisDict = allPlaces[i] as? [AnyHashable: Any]
                                 
                                 let coordinates = thisDict!["coordinates"] as! [AnyHashable : Any]
-                                thisCafe.image_url = thisDict!["image_url"] as! String
+                                
                                 thisCafe.name = thisDict!["name"] as! String
                                 
                                 listings.append(thisCafe)
                                 thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
                                 thisCafe.longitude = Double(coordinates["longitude"] as! Double)
                                 
-                                let cafeNode = nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: thisCafe.name, insideTerrainWithLattitude: cityLattitude, insideTerrainWithLongitude: cityLongitude, annotationColor: annotationTextColor)
+                                let cafeNode = nodeFactory.CreatePlaceNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: thisCafe.name, insideTerrainWithLattitude: cityLattitude, insideTerrainWithLongitude: cityLongitude, annotationColor: annotationTextColor)
                                 
                                 if (thisCafe.lattitude > cityLattitude-(0.07621358526/2) && (thisCafe.lattitude < cityLattitude+(0.07621358526/2))) && (thisCafe.longitude > cityLongitude - (0.12192598544/2) && thisCafe.lattitude < cityLattitude+(0.07621358526/2)) && (thisCafe.longitude < cityLongitude + (0.12192598544/2)) {
                                     
@@ -150,51 +145,6 @@ class AnnotationManager: NSObject {
             }
         }
         
-        
-            
-        
-            
-        
-        
-        
-        
-        
-
-
-        /*
-        var listings = [Annotation]()
-        self.downloadAnnotationsFromURL(lattitude: cityLattitude, longitude: cityLongitude, searchItem: annotationType) { (json, nil) -> (Void) in
-            if let json = json {
-
-                let allPlaces = json["businesses"] as! [[String : Any]];
-                print(allPlaces.count)
-
-                for i in 0..<allPlaces.count {
-                    var thisCafe = Annotation()
-                    var thisDict = allPlaces[i] as? [AnyHashable: Any]
-
-                    let coordinates = thisDict!["coordinates"] as! [AnyHashable : Any]
-                    thisCafe.image_url = thisDict!["image_url"] as! String
-                    thisCafe.name = thisDict!["name"] as! String
-
-                    listings.append(thisCafe)
-                    thisCafe.lattitude = Double(coordinates["latitude"] as! Double)
-                    thisCafe.longitude = Double(coordinates["longitude"] as! Double)
-
-                    let cafeNode = nodeFactory.createBusNode(lattitude: thisCafe.lattitude, longitude: thisCafe.longitude, name: thisCafe.name, insideTerrainWithLattitude: cityLattitude, insideTerrainWithLongitude: cityLongitude, annotationColor: annotationTextColor)
-
-                    if (thisCafe.lattitude > cityLattitude-(0.07621358526/2) && (thisCafe.lattitude < cityLattitude+(0.07621358526/2))) && (thisCafe.longitude > cityLongitude - (0.12192598544/2) && thisCafe.lattitude < cityLattitude+(0.07621358526/2)) && (thisCafe.longitude < cityLongitude + (0.12192598544/2)) {
-                        
-                        if !self.placeNamesArray.contains(thisCafe.name) {
-                        terrainNode.addChildNode(cafeNode)
-                            self.placeNamesArray.append(thisCafe.name)
-                        }
-                    }
-                }
-            }
-        }
-        
-        */
     }
     
     

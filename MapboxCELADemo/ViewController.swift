@@ -19,37 +19,30 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var moveImage: UIImageView?
     @IBOutlet weak var messageView: UIVisualEffectView?
     @IBOutlet weak var messageLabel: UILabel?
-    @IBOutlet weak var cityLabel: UILabel!
-    @IBOutlet weak var searchContainerView: UIView!
-    @IBOutlet weak var searchTextField: UITextField!
-    @IBOutlet weak var lookupButtonOutlet: UIButton!
+    @IBOutlet private weak var cityLabel: UILabel!
+    @IBOutlet private weak var searchContainerView: UIView!
+    @IBOutlet private weak var searchTextField: UITextField!
+    @IBOutlet private weak var lookupButtonOutlet: UIButton!
     
     
-    
-    
-   
-    
-    
-    let locationManager = CLLocationManager()
+    private let locationManager = CLLocationManager()
     weak var terrain: SCNNode?
     var planes: [UUID: SCNNode] = [UUID: SCNNode]()
     
-    let nodeFactory = NodeFactory()
+    private let nodeFactory = NodeFactory()
     var focusSquare: FocusSquare?
     var lastDragResult: ARHitTestResult?
     var startScale: Float?
-    var placeNamesArray = [String]()
     
-    let elevationManager = ElevationManager()
+    
+    
     let annotationManager = AnnotationManager()
     
     
-    var terrainNodeReference:(Any)? = nil
+    private var terrainNodeReference:(Any)? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(cityLattitude)
-        print(cityLongitude)
         enableBasicLocationServices()
         locationManager.delegate = self
         searchContainerView.isHidden = true
@@ -69,21 +62,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         restartTracking()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         UIApplication.shared.isIdleTimerDisabled = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        
         arView?.session.pause()
         UIApplication.shared.isIdleTimerDisabled = false
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
     
     //MARK: - LocationServices
@@ -97,8 +91,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             locationManager.requestWhenInUseAuthorization()
             break
         case .authorizedWhenInUse, .authorizedAlways:
-            print((self.locationManager.location?.coordinate.latitude)!)
-            print((self.locationManager.location?.coordinate.longitude)!)
             break
         }
     }
@@ -138,12 +130,22 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         terrainNode.fetchTerrainHeights(minWallHeight: 50.0, enableDynamicShadows: true, progress: { _, _ in }, completion: {
             NSLog("Terrain load complete")
         })
-        
+
+        //satellite-v9//satellite-streets-v9
         terrainNode.fetchTerrainTexture("mapbox/satellite-v9", zoom: 14, progress: { _, _ in }, completion: { image in
             NSLog("Texture load complete")
             terrainNode.geometry?.materials[4].diffuse.contents = image
             self.cityLabel.text = cityName
             self.lookupButtonOutlet.isHidden = false
+            
+            if cityName == "" {
+                let placeInCity = self.nodeFactory.CreatePlaceNode(lattitude: cityLattitude, longitude: cityLongitude, name: "current location", insideTerrainWithLattitude: cityLattitude, insideTerrainWithLongitude: cityLongitude, annotationColor: UIColor.white)
+                terrainNode.addChildNode(placeInCity)
+            } else {
+                let placeInCity = self.nodeFactory.CreatePlaceNode(lattitude: cityLattitude, longitude: cityLongitude, name: cityName, insideTerrainWithLattitude: cityLattitude, insideTerrainWithLongitude: cityLongitude, annotationColor: UIColor.white)
+                terrainNode.addChildNode(placeInCity)
+            }
+            
         })
         
         if cityLattitude == 0.0 {
@@ -151,34 +153,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             cityLongitude = (self.locationManager.location?.coordinate.longitude)!
             let endSphere = nodeFactory.createMyPositionNode(elevation: 0.0)
             terrainNode.addChildNode(endSphere)
-            annotationManager.downloadElevationFromCoordinates(lattitude: 49.1106646316641, longitude: -122.867296377542) { (json, error) -> (Void) in
-                if let json = json {
-                    if let results = json["results"] as? [[String: Any]] {
-                        endSphere.position = SCNVector3(endSphere.position.x,2*Float(self.elevationManager.createElevationFromjSon(json: results)),endSphere.position.z)
-                    }
-                }
-            }
-         
         }
         
-
-//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "cafe", annotationTextColor: UIColor.green, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
-//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "school", annotationTextColor: UIColor.blue, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
-//        annotationManager.addAnnotationsToNode(terrainNode, annotationType: "hospital", annotationTextColor: UIColor.white, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
-
-
-//
         arView!.isUserInteractionEnabled = true
     }
     
-    let moveFactor:Float = 10.0
-    
-   
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
-    
     
     @IBAction func lookupButtonPressed(_ sender: UIButton) {
         searchContainerView.isHidden = false
@@ -187,30 +170,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         lookupButtonOutlet.isHidden = true
     }
     
-    
-    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
-        lookupButtonOutlet.isHidden = false
-        searchTextField.resignFirstResponder()
-        searchContainerView.isHidden = true
-//        searchTextField.text = ""
-        
-//        for placeName in 0..<annotationManager.placeNamesArray.count {
-//            let placeNode = self.arView?.scene.rootNode.childNode(withName: annotationManager.placeNamesArray[placeName], recursively: true)
-//            placeNode?.removeFromParentNode()
-//        }
-//        annotationManager.placeNamesArray = [String]()
-        
-        annotationManager.addAnnotationsToNode(terrainNodeReference as! SCNNode, annotationType: searchTextField.text!.replacingOccurrences(of: " ", with: ""), annotationTextColor: UIColor.white, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
-        
-        
-        
-        
+        searchPlaces()
     }
     
-    
     @IBAction func clearButtonPressed(_ sender: UIButton) {
-        
         for placeName in 0..<annotationManager.placeNamesArray.count {
             let placeNode = self.arView?.scene.rootNode.childNode(withName: annotationManager.placeNamesArray[placeName], recursively: true)
             placeNode?.removeFromParentNode()
@@ -225,17 +189,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         lookupButtonOutlet.isHidden = false
     }
     
-    
-    
     @IBAction func searchTextFieldDidEndOnExit(_ sender: UITextField) {
-        
-        
+        searchPlaces()
     }
     
-    
-    
-    
-    
+    func searchPlaces() {
+        lookupButtonOutlet.isHidden = false
+        searchTextField.resignFirstResponder()
+        searchContainerView.isHidden = true
+       
+        annotationManager.addAnnotationsToNode(terrainNodeReference as! SCNNode, annotationType: searchTextField.text!.replacingOccurrences(of: " ", with: "").replacingOccurrences(of: "", with: "").replacingOccurrences(of: "’", with: ""), annotationTextColor: UIColor.white, withTerrainlattitude: cityLattitude, withTerrainLongitude: cityLongitude, usingNodeFactory: self.nodeFactory)
+    }
     
 }
 

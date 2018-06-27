@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7209E1288A7030A5A0FAEDB7 /* Pods_MapboxCELADemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F34F917659B72845AF3ED74 /* Pods_MapboxCELADemo.framework */; };
+		F17399C620E421D800DB32B7 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17399C520E421D800DB32B7 /* SelectionViewController.swift */; };
+		F17399C820E4258E00DB32B7 /* CityDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17399C720E4258E00DB32B7 /* CityDetails.swift */; };
 		F17E9B5C20DC8BAF006C6BF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B5B20DC8BAF006C6BF0 /* AppDelegate.swift */; };
 		F17E9B5E20DC8BAF006C6BF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B5D20DC8BAF006C6BF0 /* ViewController.swift */; };
 		F17E9B6120DC8BAF006C6BF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F17E9B5F20DC8BAF006C6BF0 /* Main.storyboard */; };
@@ -21,8 +23,6 @@
 		F17E9B7620DC8CAA006C6BF0 /* MapboxSceneKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F17E9B7420DC8CAA006C6BF0 /* MapboxSceneKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F17E9B7820DC8F17006C6BF0 /* FocusSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */; };
 		F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */; };
-		F18CC49A20E001AD0055C470 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49920E001AD0055C470 /* WelcomeViewController.swift */; };
-		F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49B20E00C190055C470 /* TableViewCell.swift */; };
 		F18CC49E20E070620055C470 /* ElevationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC49D20E070620055C470 /* ElevationManager.swift */; };
 		F18CC4A220E135080055C470 /* AnnotationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC4A120E135070055C470 /* AnnotationManager.swift */; };
 		F18CC4A420E151230055C470 /* Annotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CC4A320E151230055C470 /* Annotation.swift */; };
@@ -52,6 +52,8 @@
 		0F34F917659B72845AF3ED74 /* Pods_MapboxCELADemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxCELADemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1073E76D4D8EEC351998E086 /* Pods-MapboxCELADemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxCELADemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapboxCELADemo/Pods-MapboxCELADemo.debug.xcconfig"; sourceTree = "<group>"; };
 		2EEECF66E9104F87B7F42CAE /* Pods-MapboxCELADemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxCELADemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapboxCELADemo/Pods-MapboxCELADemo.release.xcconfig"; sourceTree = "<group>"; };
+		F17399C520E421D800DB32B7 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		F17399C720E4258E00DB32B7 /* CityDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetails.swift; sourceTree = "<group>"; };
 		F17E9B5820DC8BAF006C6BF0 /* MapboxCELADemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxCELADemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17E9B5B20DC8BAF006C6BF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F17E9B5D20DC8BAF006C6BF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +66,6 @@
 		F17E9B7420DC8CAA006C6BF0 /* MapboxSceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MapboxSceneKit.framework; sourceTree = "<group>"; };
 		F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusSquare.swift; sourceTree = "<group>"; };
 		F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNExtensions.swift; sourceTree = "<group>"; };
-		F18CC49920E001AD0055C470 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
-		F18CC49B20E00C190055C470 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F18CC49D20E070620055C470 /* ElevationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElevationManager.swift; sourceTree = "<group>"; };
 		F18CC4A120E135070055C470 /* AnnotationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationManager.swift; sourceTree = "<group>"; };
 		F18CC4A320E151230055C470 /* Annotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Annotation.swift; sourceTree = "<group>"; };
@@ -141,9 +141,9 @@
 				F17E9B7920DC8F9C006C6BF0 /* SCNExtensions.swift */,
 				F17E9B7720DC8F17006C6BF0 /* FocusSquare.swift */,
 				F17E9B5F20DC8BAF006C6BF0 /* Main.storyboard */,
+				F17399C520E421D800DB32B7 /* SelectionViewController.swift */,
 				F18CC4A320E151230055C470 /* Annotation.swift */,
-				F18CC49B20E00C190055C470 /* TableViewCell.swift */,
-				F18CC49920E001AD0055C470 /* WelcomeViewController.swift */,
+				F17399C720E4258E00DB32B7 /* CityDetails.swift */,
 				F1E86D1020DF20DD003D5515 /* APITestViewController.swift */,
 				F17E9B6220DC8BB2006C6BF0 /* Assets.xcassets */,
 				F17E9B6420DC8BB2006C6BF0 /* LaunchScreen.storyboard */,
@@ -286,19 +286,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18CC49A20E001AD0055C470 /* WelcomeViewController.swift in Sources */,
 				F1E86D0520DEDBDB003D5515 /* NodeFactory.swift in Sources */,
 				F17E9B5E20DC8BAF006C6BF0 /* ViewController.swift in Sources */,
 				F17E9B7820DC8F17006C6BF0 /* FocusSquare.swift in Sources */,
 				F18CC4A420E151230055C470 /* Annotation.swift in Sources */,
 				F1E86D0920DF135A003D5515 /* ViewController+ARSCNView.swift in Sources */,
-				F18CC49C20E00C190055C470 /* TableViewCell.swift in Sources */,
 				F18CC49E20E070620055C470 /* ElevationManager.swift in Sources */,
 				F1E86D0F20DF194E003D5515 /* ViewController+gestures.swift in Sources */,
 				F18CC4A220E135080055C470 /* AnnotationManager.swift in Sources */,
 				F17E9B7A20DC8F9C006C6BF0 /* SCNExtensions.swift in Sources */,
 				F17E9B5C20DC8BAF006C6BF0 /* AppDelegate.swift in Sources */,
 				F1E86D1120DF20DD003D5515 /* APITestViewController.swift in Sources */,
+				F17399C820E4258E00DB32B7 /* CityDetails.swift in Sources */,
+				F17399C620E421D800DB32B7 /* SelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +451,10 @@
 				);
 				INFOPLIST_FILE = MapboxCELADemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Singh4282.MapboxCELADemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -472,7 +475,10 @@
 				);
 				INFOPLIST_FILE = MapboxCELADemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Singh4282.MapboxCELADemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
